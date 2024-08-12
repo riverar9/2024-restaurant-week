@@ -2,7 +2,7 @@
 import os
 import time
 
-default_sleep_duration = 0.500
+default_sleep_duration = 0.250
 
 def get_latest_chrome_driver():
     # Install the driver:

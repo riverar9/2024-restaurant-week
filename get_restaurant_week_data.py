@@ -173,6 +173,9 @@ def main():
     loop_iteration = 0
     not_last_page = True
     while not_last_page:
+        # Switch to the source page
+        driver.switch_to.window(source_tab_handle)
+        
         # Increment the loop
         loop_iteration += 1
 

@@ -144,7 +144,10 @@ def save_restaurant_information(driver, tab_to_mine):
 
     # Collect the single value responses
     for each_css_element in css_mine_list:
-        t_dict[each_css_element[0]] = driver.find_element(By.CSS_SELECTOR, each_css_element[1]).text
+        try:
+            t_dict[each_css_element[0]] = driver.find_element(By.CSS_SELECTOR, each_css_element[1]).text
+        except:
+            t_dict[each_css_element[0]] = 'N/A'
 
     # Create two temporary lists for the multiple value responses
     t_dict['weeks'] = []

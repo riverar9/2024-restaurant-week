@@ -53,7 +53,7 @@ def open_website(url, chrome_driver_downloaded = False):
     from selenium.webdriver.common.by import By
 
     chrome_options = Options()
-    #chrome_options.add_argument("--headless")  # Run in headless mode (no GUI)
+    chrome_options.add_argument("--headless")  # Run in headless mode (no GUI)
     
     # Path to chromedriver
     if not chrome_driver_downloaded:

@@ -153,11 +153,15 @@ def save_restaurant_information(driver, tab_to_mine):
     t_dict['weeks'] = []
     t_dict['deals'] = []
 
-    for each_week_deal in driver.find_elements(By.CLASS_NAME, week_deal_class_id):
-        if each_week_deal.text.startswith('Week'):
-            t_dict['weeks'].append(each_week_deal.text)
-        elif each_week_deal.text.startswith('$'):
-            t_dict['deals'].append(each_week_deal.text)
+    try:
+        for each_week_deal in driver.find_elements(By.CLASS_NAME, week_deal_class_id):
+            if each_week_deal.text.startswith('Week'):
+                t_dict['weeks'].append(each_week_deal.text)
+            elif each_week_deal.text.startswith('$'):
+                t_dict['deals'].append(each_week_deal.text)
+    except:
+        t_dict['weeks'] = ['N/A']
+        t_dict['deals'] = ['N/A']
     
     update_dict(
         t_dict['restaurant_name'],

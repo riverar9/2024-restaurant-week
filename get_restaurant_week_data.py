@@ -193,5 +193,5 @@ def main():
                 save_restaurant_information(driver, each_open_tab)
                 driver.close()
 # %%
-main()
-# %%
+if __name__ == "__main__":
+    main()

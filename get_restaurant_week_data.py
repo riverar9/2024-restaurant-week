@@ -35,12 +35,8 @@ def get_latest_chrome_driver():
     print('\tChromedriver Downloaded.')
 
 def find_chromedriver(starting_directory = '.'):
-    """
-    Searches for 'chromedriver.exe' starting from the specified directory.
+    # Searches for 'chromedriver.exe' starting from the specified directory.
     
-    :param starting_directory: Directory to start the search from
-    :return: Path to the 'chromedriver.exe' file if found, otherwise None
-    """
     for root, dirs, files in os.walk(starting_directory):
         if 'chromedriver.exe' in files:
             return os.path.join(root, 'chromedriver.exe')

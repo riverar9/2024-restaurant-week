@@ -5,7 +5,7 @@ import json
 
 default_sleep_duration = 0.000
 
-json_file_path = "restaurant_data/all_restaurants.json"
+json_file_path = "all_restaurants.json"
 
 # Load dictionary from file or create an empty one
 def load_dict(file_path = json_file_path):

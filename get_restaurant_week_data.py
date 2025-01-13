@@ -5,7 +5,9 @@ import json
 
 default_sleep_duration = 0.000
 
-json_file_path = "all_restaurants.json"
+current_season = '2025_winter'
+
+json_file_path = f"{current_season}_all_restaurants.json"
 
 # Load dictionary from file or create an empty one
 def load_dict(file_path = json_file_path):
@@ -80,7 +82,7 @@ def open_page_websites(driver, source_tab_handle):
 
     # Get the list of items on this page
     time.sleep(default_sleep_duration)
-    container_name = "PromotionCardGrid_container__1jhJo"
+    container_name = "PromotionCardGrid_container__phhU9"
     parent_element = driver.find_element(By.CLASS_NAME, container_name)
 
     children_elements = parent_element.find_elements(By.XPATH, './*')
@@ -97,14 +99,14 @@ def move_to_next_page(driver):
     from selenium.webdriver.common.by import By
     from selenium.webdriver.common.action_chains import ActionChains
 
-    pagination_class_name = "PromotionCardGrid_pagination__HETwJ"
+    pagination_class_name = "PromotionCardGrid_pagination__g0F_c"
     
     pagination_element = driver.find_element(By.CLASS_NAME, pagination_class_name)
     page_number_elements = pagination_element.find_elements(By.XPATH, ".//a")
     page_numbers = [int(el.text) for el in page_number_elements if el.text.isdigit()]
 
     # The last page will have the below properties. If we're on the last page then don't click
-    if page_numbers == [1, 52]:
+    if page_numbers == [1, 49]:
         print('\tOn the last page. Skipping')
         return False
     else:
@@ -116,22 +118,22 @@ def move_to_next_page(driver):
         next_page_element.click()
         return True
 
-def save_restaurant_information(driver, tab_to_mine):
+def save_restaurant_information(driver, tab_to_mine, debug = False):
     from selenium.webdriver.common.by import By
     
     # Swith to the restaurant's tab incase it wasn't done already
     driver.switch_to.window(tab_to_mine)
 
     # Set up all single value responses
-    css_mine_list = [
-        ('restaurant_name', 'h2.Headline_alignmentStart__2EYt8.Headline_headingLevelH2__dZSQa.Headline_lightModeDarkText__qATai.Headline_font-weight--bold__uu2LY.Headline_headline__JexJb.HotelDetailPage_headline__0SjCn')
-        , ('restaurant_address', 'p.BodyText_weightNormal__QIrrF.BodyText_alignmentStart__bP3n2.BodyText_sizeMd__lvRFP.BodyText_lightModeDarkText__ZsNny.BodyText_bodytext__kHD4K.QuickInfo_sectionSubContent__GYqr_')
-        , ('restaurant_description', 'p.BodyText_weightNormal__QIrrF.BodyText_alignmentStart__bP3n2.BodyText_sizeXl__MpNbD.BodyText_lightModeLightText__hdbN9.BodyText_bodytext__kHD4K.RichText_bodyText__tfGJG')
-        , ('restaurant_url', '[aria-label="visit website link"] .Link_linkText__w1V5y')
+    class_mine_list = [
+        ('restaurant_name', 'HotelDetailPage_termsDetail__bcmpP')
+        , ('restaurant_address', 'QuickInfo_locationAddressContainer__UhWNN')
+        , ('restaurant_description', 'RichText_richTextWrapper__FifG2')
+        #, ('restaurant_url', 'QuickInfo_link__LF7_N Link_link__r_cmh Link_linkFonts__L1392')
     ]
     
     # Set up multiple value responses.
-    week_deal_class_id = "RestaurantWeekTag_inclusionWeek__6LnyS"
+    week_deal_class_id = "RestaurantWeekTag_inclusionWeek__SZfru"
     
     # Set up an empty dictionary to collect responses
     t_dict = {
@@ -139,9 +141,11 @@ def save_restaurant_information(driver, tab_to_mine):
     }
 
     # Collect the single value responses
-    for each_css_element in css_mine_list:
+    for each_css_element in class_mine_list:
         try:
-            t_dict[each_css_element[0]] = driver.find_element(By.CSS_SELECTOR, each_css_element[1]).text
+            t_dict[each_css_element[0]] = driver.find_element(By.CLASS_NAME, each_css_element[1]).text
+            if debug:
+                print(f"\t\tDB: {t_dict[each_css_element[0]]}")
         except:
             t_dict[each_css_element[0]] = 'N/A'
 
@@ -158,11 +162,20 @@ def save_restaurant_information(driver, tab_to_mine):
     except:
         t_dict['weeks'] = ['N/A']
         t_dict['deals'] = ['N/A']
+
+    try:
+        t_dict['restaurant_url'] = driver.find_element(By.XPATH, "//a[@aria-label='visit website link']").get_attribute("href")
+        if debug:
+            print(f"DB: {t_dict['restaurant_url']}")
+    except:
+        t_dict['restaurant_url'] = 'N/A'
     
     update_dict(
         t_dict['restaurant_name'],
         t_dict
     )
+
+    print(f"\tDownloaded data for '{t_dict['restaurant_name']}'")
 
  # %%
 def main():
@@ -181,6 +194,7 @@ def main():
         
         # Increment the loop
         loop_iteration += 1
+        print(f"On Page: {loop_iteration}")
 
         # Check the loop iteration to see if we need to go to the next page.
         #   The function move_to_next_page returns true or false if we're on the last page.
@@ -198,3 +212,4 @@ def main():
 # %%
 if __name__ == "__main__":
     main()
+# %%

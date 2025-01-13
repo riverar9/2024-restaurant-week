@@ -1,0 +1,2364 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_1fe24e72c6c26a36cc8997d9532a7447 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_1fe24e72c6c26a36cc8997d9532a7447" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_1fe24e72c6c26a36cc8997d9532a7447 = L.map(
+                "map_1fe24e72c6c26a36cc8997d9532a7447",
+                {
+                    center: [40.7128, -74.006],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_105541edad5dada19f53bba7812d1621 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_105541edad5dada19f53bba7812d1621.addTo(map_1fe24e72c6c26a36cc8997d9532a7447);
+        
+    
+            var marker_417d3d7a77df189a1674d5353c41037f = L.marker(
+                [40.7204577, -73.9870469],
+                {
+}
+            ).addTo(map_1fe24e72c6c26a36cc8997d9532a7447);
+        
+    
+        var popup_098fd1b6aacf4502045bdbb9117169fc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6679f89472b9c2afa3def15dd10117ae = $(`<div id="html_6679f89472b9c2afa3def15dd10117ae" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif;">             <h4 style="margin: 0;">                 <a href="https://beautyandessex.com/new-york" target="_blank" style="text-decoration: none; color: #007BFF;">                     <b>Beauty & Essex</b>                 </a>             </h4>             <p style="margin-top: 5px; margin-bottom: 5px;">                 Hidden behind a functioning pawn shop, Beauty & Essex is a true gem on the Lower East Side and widely regarded as one of New York's most beautiful restaurants. Head inside and past the two-story crystal chandelier and settle in the sumptuous banquet seating for celebrity chef Chris Santos' signature menu of international small plates along with dry-aged steaks and raw bar offerings. Leave room for the restaurant's equally decadent desserts.             </p>             <ul>                 <li>                     <a href="https://www.nyctourism.com/restaurant-week/beauty-essex/" target="_blank" style="text-decoration: none; color: #007BFF;">$ 45 Dinner</li><li>$ 30 Sunday Lunch / Brunch</li><li>$ 45 Sunday Dinner</a>                 </li>             </ul>         </div>         </div>`)[0];
+                popup_098fd1b6aacf4502045bdbb9117169fc.setContent(html_6679f89472b9c2afa3def15dd10117ae);
+            
+        
+
+        marker_417d3d7a77df189a1674d5353c41037f.bindPopup(popup_098fd1b6aacf4502045bdbb9117169fc)
+        ;
+
+        
+    
+    
+            marker_417d3d7a77df189a1674d5353c41037f.bindTooltip(
+                `<div>
+                     Beauty & Essex
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_88b98df430ea7f2e04298185371abe47 = L.marker(
+                [40.7568723, -73.9774352],
+                {
+}
+            ).addTo(map_1fe24e72c6c26a36cc8997d9532a7447);
+        
+    
+        var popup_135680fe1e5120915cd9a17bfc269943 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0c50036a658f45009fbe38dcdb88ef20 = $(`<div id="html_0c50036a658f45009fbe38dcdb88ef20" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif;">             <h4 style="margin: 0;">                 <a href="https://www.bennyjohnsnyc.com/" target="_blank" style="text-decoration: none; color: #007BFF;">                     <b>Benny John's Bar and Grill</b>                 </a>             </h4>             <p style="margin-top: 5px; margin-bottom: 5px;">                 Benny John's Bar and Grill is a steakhouse that offers lunch and dinner daily, along with happy hour and bar bites, plus a brunch menu on Saturdays and Sundays. The menu includes a variety of steaks, chops and burgers, fish and seafood, chicken and pasta dishes.             </p>             <ul>                 <li>                     <a href="https://www.nyctourism.com/restaurant-week/benny-johns-bar-and-grill/" target="_blank" style="text-decoration: none; color: #007BFF;">$ 30 Lunch</li><li>$ 60 Dinner</li><li>$ 60 Sunday Dinner</a>                 </li>             </ul>         </div>         </div>`)[0];
+                popup_135680fe1e5120915cd9a17bfc269943.setContent(html_0c50036a658f45009fbe38dcdb88ef20);
+            
+        
+
+        marker_88b98df430ea7f2e04298185371abe47.bindPopup(popup_135680fe1e5120915cd9a17bfc269943)
+        ;
+
+        
+    
+    
+            marker_88b98df430ea7f2e04298185371abe47.bindTooltip(
+                `<div>
+                     Benny John's Bar and Grill
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_9d4b5d685799ddb7911b991296eabe1d = L.marker(
+                [40.7582025625, -73.97662792708333],
+                {
+}
+            ).addTo(map_1fe24e72c6c26a36cc8997d9532a7447);
+        
+    
+        var popup_689264c1c56194cf239357109782e075 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5de0eb7ee01ce09d8aaf781f44aa77b4 = $(`<div id="html_5de0eb7ee01ce09d8aaf781f44aa77b4" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif;">             <h4 style="margin: 0;">                 <a href="https://montereybrasserie.com/" target="_blank" style="text-decoration: none; color: #007BFF;">                     <b>Monterey</b>                 </a>             </h4>             <p style="margin-top: 5px; margin-bottom: 5px;">                 Simon Oren, Dudi Sasson and chef James Tracey bring midtown Manhattan a glamorous bold American restaurant: Monterey. The raw bar features every crustacean imaginable, and servers stroll through the dining room brandishing custom gueridon carts preparing items tableside. The menu circles the globe, offering chef Tracey’s seasonal cuisine alongside an extensive selection of prime dry-aged steaks, and roast prime rib of beef. Beverage director Aviram Turgeman’s wine list is award-winning, and his cocktails are expertly shaken and stirred.             </p>             <ul>                 <li>                     <a href="https://www.nyctourism.com/restaurant-week/monterey/" target="_blank" style="text-decoration: none; color: #007BFF;">$ 45 Lunch</li><li>$ 60 Dinner</a>                 </li>             </ul>         </div>         </div>`)[0];
+                popup_689264c1c56194cf239357109782e075.setContent(html_5de0eb7ee01ce09d8aaf781f44aa77b4);
+            
+        
+
+        marker_9d4b5d685799ddb7911b991296eabe1d.bindPopup(popup_689264c1c56194cf239357109782e075)
+        ;
+
+        
+    
+    
+            marker_9d4b5d685799ddb7911b991296eabe1d.bindTooltip(
+                `<div>
+                     Monterey
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_f5ce85705f21ff8d3241e42812e5b4c3 = L.marker(
+                [40.759513350000006, -73.98250663839617],
+                {
+}
+            ).addTo(map_1fe24e72c6c26a36cc8997d9532a7447);
+        
+    
+        var popup_b97dc85f6d6bf97b0526fbd8ecbedfde = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9c5b67d3bfdfed862767952bdbb77dab = $(`<div id="html_9c5b67d3bfdfed862767952bdbb77dab" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif;">             <h4 style="margin: 0;">                 <a href="https://www.delfriscos.com/location/del-friscos-double-eagle-steakhouse-new-york-ny" target="_blank" style="text-decoration: none; color: #007BFF;">                     <b>Del Frisco's Double Eagle Steakhouse New York</b>                 </a>             </h4>             <p style="margin-top: 5px; margin-bottom: 5px;">                 Del Frisco's Double Eagle Steakhouse New York is an energetic, sprawling, three-story restaurant in Midtown, featuring floor-to-ceiling windows that offer grand views of Sixth Avenue. Their guests are treated to an unforgettable experience through the chef-driven cuisine, world-class wine program and unparalleled hospitality. Del Frisco's offers a variety of private and semi-private dining and reception spaces perfectly suited for special occasions or business gatherings. They provide their private diners with warm hospitality and custom menus featuring the finest steak and seafood. Dedicated private dining coordinators will help to plan and personalize your event so you can sit back and relax.             </p>             <ul>                 <li>                     <a href="https://www.nyctourism.com/restaurant-week/del-friscos-double-eagle-steakhouse-new-york/" target="_blank" style="text-decoration: none; color: #007BFF;">$ 60 Lunch</li><li>$ 60 Dinner</li><li>$ 60 Sunday Dinner</a>                 </li>             </ul>         </div>         </div>`)[0];
+                popup_b97dc85f6d6bf97b0526fbd8ecbedfde.setContent(html_9c5b67d3bfdfed862767952bdbb77dab);
+            
+        
+
+        marker_f5ce85705f21ff8d3241e42812e5b4c3.bindPopup(popup_b97dc85f6d6bf97b0526fbd8ecbedfde)
+        ;
+
+        
+    
+    
+            marker_f5ce85705f21ff8d3241e42812e5b4c3.bindTooltip(
+                `<div>
+                     Del Frisco's Double Eagle Steakhouse New York
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_4beac8dbfdc87e47af7e3ea55ed0dfd4 = L.marker(
+                [40.7717565, -73.9818595],
+                {
+}
+            ).addTo(map_1fe24e72c6c26a36cc8997d9532a7447);
+        
+    
+        var popup_a29d2575a8333148f44e1b12495a8d44 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2974ce2dd949ae6673cf8e3704f921ea = $(`<div id="html_2974ce2dd949ae6673cf8e3704f921ea" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif;">             <h4 style="margin: 0;">                 <a href="https://www.barboulud.com/nyc" target="_blank" style="text-decoration: none; color: #007BFF;">                     <b>Bar Boulud</b>                 </a>             </h4>             <p style="margin-top: 5px; margin-bottom: 5px;">                 If you’ve ever wanted to break bread at an avant-garde cavernous wine cellar with your eccentric, well-off French friends, then Bar Boulud is what you’ve been waiting for. Long, intimate and ending a cozy tasting room, this is Daniel Boulud’s manifestation of brasserie fare done with standard and modern flourishes. The steak frites and coq au vin are popular dishes, and Boulud scores with a new preparation of one of his classics: pork belly.             </p>             <ul>                 <li>                     <a href="https://www.nyctourism.com/restaurant-week/bar-boulud/" target="_blank" style="text-decoration: none; color: #007BFF;">$ 45 Lunch</li><li>$ 60 Dinner</li><li>$ 60 Sunday Dinner</a>                 </li>             </ul>         </div>         </div>`)[0];
+                popup_a29d2575a8333148f44e1b12495a8d44.setContent(html_2974ce2dd949ae6673cf8e3704f921ea);
+            
+        
+
+        marker_4beac8dbfdc87e47af7e3ea55ed0dfd4.bindPopup(popup_a29d2575a8333148f44e1b12495a8d44)
+        ;
+
+        
+    
+    
+            marker_4beac8dbfdc87e47af7e3ea55ed0dfd4.bindTooltip(
+                `<div>
+                     Bar Boulud
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_89483e5da8784a3ec5688348e38cce8e = L.marker(
+                [40.761150937500005, -73.97780285416667],
+                {
+}
+            ).addTo(map_1fe24e72c6c26a36cc8997d9532a7447);
+        
+    
+        var popup_095d181f773ac222d98448746ba01985 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0e811bda99ee60e375e321945eeb3f37 = $(`<div id="html_0e811bda99ee60e375e321945eeb3f37" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif;">             <h4 style="margin: 0;">                 <a href="https://nusretusa.com/ny-midtown" target="_blank" style="text-decoration: none; color: #007BFF;">                     <b>Nusr-Et - Midtown</b>                 </a>             </h4>             <p style="margin-top: 5px; margin-bottom: 5px;">                 Nusr-Et is an internationally acclaimed destination for luxury dining from Nusret "Salt Bae" Gökçeis, a Turkish butcher, chef, and restaurateur whose technique for preparing and seasoning meat became an internet meme. Its globally praised, unique concept combines an innovative menu with impeccable service and great fun. The meat-focused menu includes not only a wide range of premium cuts of Wagyu beef, but several items (steak, rack of lamb, burger) coated in real 24k gold.             </p>             <ul>                 <li>                     <a href="https://www.nyctourism.com/restaurant-week/nusr-et-midtown/" target="_blank" style="text-decoration: none; color: #007BFF;">$ 45 Lunch</li><li>$ 60 Dinner</li><li>$ 60 Sunday Dinner</a>                 </li>             </ul>         </div>         </div>`)[0];
+                popup_095d181f773ac222d98448746ba01985.setContent(html_0e811bda99ee60e375e321945eeb3f37);
+            
+        
+
+        marker_89483e5da8784a3ec5688348e38cce8e.bindPopup(popup_095d181f773ac222d98448746ba01985)
+        ;
+
+        
+    
+    
+            marker_89483e5da8784a3ec5688348e38cce8e.bindTooltip(
+                `<div>
+                     Nusr-Et - Midtown
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_0b613fac6d03af96181952e5fb252a31 = L.marker(
+                [40.7682549, -73.9828519],
+                {
+}
+            ).addTo(map_1fe24e72c6c26a36cc8997d9532a7447);
+        
+    
+        var popup_13566ce81055635cb15600e123eadd71 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fb79481aae9431363f38e3d7aa1f13ff = $(`<div id="html_fb79481aae9431363f38e3d7aa1f13ff" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif;">             <h4 style="margin: 0;">                 <a href="https://www.porterhousenyc.com/" target="_blank" style="text-decoration: none; color: #007BFF;">                     <b>Porter House Bar and Grill</b>                 </a>             </h4>             <p style="margin-top: 5px; margin-bottom: 5px;">                 Porter House is an award-winning, contemporary American restaurant from celebrated chef Michael Lomonaco. The menu of seasonally-inspired American classics is complemented by expertly crafted cocktails, an acclaimed wine program and genuine, warm hospitality—all overlooking Columbus Circle and Central Park at the Deutsche Bank Center. Prime steaks, exceptional seafood, pastas, roasted chicken and duck and other ingredient-driven signature dishes, showcase the bold, vibrant flavors Lomonaco and his team are known for delivering.             </p>             <ul>                 <li>                     <a href="https://www.nyctourism.com/restaurant-week/porter-house-bar-and-grill/" target="_blank" style="text-decoration: none; color: #007BFF;">$ 30 Lunch</li><li>$ 30 Sunday Lunch / Brunch</a>                 </li>             </ul>         </div>         </div>`)[0];
+                popup_13566ce81055635cb15600e123eadd71.setContent(html_fb79481aae9431363f38e3d7aa1f13ff);
+            
+        
+
+        marker_0b613fac6d03af96181952e5fb252a31.bindPopup(popup_13566ce81055635cb15600e123eadd71)
+        ;
+
+        
+    
+    
+            marker_0b613fac6d03af96181952e5fb252a31.bindTooltip(
+                `<div>
+                     Porter House Bar and Grill
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_00a343c4aae512bc0dccf7dd6443fdc0 = L.marker(
+                [40.756727, -73.98519076867375],
+                {
+}
+            ).addTo(map_1fe24e72c6c26a36cc8997d9532a7447);
+        
+    
+        var popup_e3eab57ed64ab98716ada232211303ef = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_44a518f834c0ffc2b9376073e4515fcb = $(`<div id="html_44a518f834c0ffc2b9376073e4515fcb" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif;">             <h4 style="margin: 0;">                 <a href="https://www.virgilsbbq.com/locations/times-square" target="_blank" style="text-decoration: none; color: #007BFF;">                     <b>Virgil's Real BBQ - Times Square</b>                 </a>             </h4>             <p style="margin-top: 5px; margin-bottom: 5px;">                 Good barbecue can be hard to find in New York, but Virgil’s was among the first to boldly promise the real deal. The interior is a version of classic, roadhouse Americana, and the kitchen serves ’cue in the many styles of the South: Thus you get Texas-style beef brisket, Carolina pulled pork, Memphis pork ribs and Georgia chicken-fried steak. But as any aficionado knows, the sides are just as important, and Virgil’s has a slew of them, including hush puppies, biscuits and gravy, and “Train Wreck Fries,” slathered in a mouthwatering mix guaranteed to infuriate your doctor: cheddar, bacon and ranch dressing.             </p>             <ul>                 <li>                     <a href="https://www.nyctourism.com/restaurant-week/virgils-real-bbq-times-square/" target="_blank" style="text-decoration: none; color: #007BFF;">$ 30 Lunch</li><li>$ 45 Dinner</li><li>$ 45 Sunday Dinner</a>                 </li>             </ul>         </div>         </div>`)[0];
+                popup_e3eab57ed64ab98716ada232211303ef.setContent(html_44a518f834c0ffc2b9376073e4515fcb);
+            
+        
+
+        marker_00a343c4aae512bc0dccf7dd6443fdc0.bindPopup(popup_e3eab57ed64ab98716ada232211303ef)
+        ;
+
+        
+    
+    
+            marker_00a343c4aae512bc0dccf7dd6443fdc0.bindTooltip(
+                `<div>
+                     Virgil's Real BBQ - Times Square
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_f083ceda3ca09559a47d02c7417efdfe = L.marker(
+                [40.7628531, -73.9838317],
+                {
+}
+            ).addTo(map_1fe24e72c6c26a36cc8997d9532a7447);
+        
+    
+        var popup_14c15b4d0391b64b640d47d014707da4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4d8841778d1c872f91e5b6bfb8548062 = $(`<div id="html_4d8841778d1c872f91e5b6bfb8548062" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif;">             <h4 style="margin: 0;">                 <a href="https://www.gallaghersnysteakhouse.com/" target="_blank" style="text-decoration: none; color: #007BFF;">                     <b>Gallaghers Steakhouse</b>                 </a>             </h4>             <p style="margin-top: 5px; margin-bottom: 5px;">                 Back in the prohibition years, Gallaghers Steakhouse served as a speakeasy. Now, 80 years later, this signature New York establishment is a prime spot for a genuine steak. The restaurant’s meat-aging room is stocked with USDA Prime dry-aged beef, which is sure to bring a tear to the eye of any carnivore. The dinner menu features chicken, seafood and even a veggie plate, but the steak is where it’s at.             </p>             <ul>                 <li>                     <a href="https://www.nyctourism.com/restaurant-week/gallaghers-steakhouse/" target="_blank" style="text-decoration: none; color: #007BFF;">$ 30 Lunch</li><li>$ 30 Sunday Lunch / Brunch</a>                 </li>             </ul>         </div>         </div>`)[0];
+                popup_14c15b4d0391b64b640d47d014707da4.setContent(html_4d8841778d1c872f91e5b6bfb8548062);
+            
+        
+
+        marker_f083ceda3ca09559a47d02c7417efdfe.bindPopup(popup_14c15b4d0391b64b640d47d014707da4)
+        ;
+
+        
+    
+    
+            marker_f083ceda3ca09559a47d02c7417efdfe.bindTooltip(
+                `<div>
+                     Gallaghers Steakhouse
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_819e6e41fcdc917b58382d076a742ffc = L.marker(
+                [40.705042, -74.0102055],
+                {
+}
+            ).addTo(map_1fe24e72c6c26a36cc8997d9532a7447);
+        
+    
+        var popup_a5249920a5c27b82eab0ba5b73d222da = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4f99458502ff2bfcababc2b38b8bc1ec = $(`<div id="html_4f99458502ff2bfcababc2b38b8bc1ec" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif;">             <h4 style="margin: 0;">                 <a href="https://www.theoriginaldelmonicos.com/" target="_blank" style="text-decoration: none; color: #007BFF;">                     <b>Delmonico's</b>                 </a>             </h4>             <p style="margin-top: 5px; margin-bottom: 5px;">                 In business since 1837, Delmonico's revolutionized the way we eat out: these guys literally invented eggs Benedict, lobster Newberg and baked Alaska, among other now-standards, and changed the face of fine dining in early America. The financial district location looks exactly like you’d expect from an old-school steak house—deep hues, dark woods and understated opulence in which to enjoy the huge Delmonico rib-eye and the Parmesan creamed spinach.             </p>             <ul>                 <li>                     <a href="https://www.nyctourism.com/restaurant-week/delmonicos-restaurant/" target="_blank" style="text-decoration: none; color: #007BFF;">$ 60 Lunch</li><li>$ 60 Dinner</li><li>$ 60 Sunday Dinner</a>                 </li>             </ul>         </div>         </div>`)[0];
+                popup_a5249920a5c27b82eab0ba5b73d222da.setContent(html_4f99458502ff2bfcababc2b38b8bc1ec);
+            
+        
+
+        marker_819e6e41fcdc917b58382d076a742ffc.bindPopup(popup_a5249920a5c27b82eab0ba5b73d222da)
+        ;
+
+        
+    
+    
+            marker_819e6e41fcdc917b58382d076a742ffc.bindTooltip(
+                `<div>
+                     Delmonico's
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_693456842b28d1c2d865a83f0993d206 = L.marker(
+                [40.7771755, -73.9211563],
+                {
+}
+            ).addTo(map_1fe24e72c6c26a36cc8997d9532a7447);
+        
+    
+        var popup_053b59c5cf78456bf3fd1af2bac65c26 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_acea794321708f2c63ad0e8e6455df99 = $(`<div id="html_acea794321708f2c63ad0e8e6455df99" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif;">             <h4 style="margin: 0;">                 <a href="https://meetthemeat.net/" target="_blank" style="text-decoration: none; color: #007BFF;">                     <b>Meet the Meat</b>                 </a>             </h4>             <p style="margin-top: 5px; margin-bottom: 5px;">                 After 25 years of experience working in elite Manhattan establishments, the proprietors of Meet the Meat decided to bring their extensive experience to Astoria, Queens. This highly-regarded steakhouse serves prime cuts of meat aged to perfection, and accompanied by superior customer service. Outdoor seating is available seasonally. Meet the Meat also accommodates corporate parties and private functions.             </p>             <ul>                 <li>                     <a href="https://www.nyctourism.com/restaurant-week/meet-the-meat/" target="_blank" style="text-decoration: none; color: #007BFF;">$ 60 Dinner</li><li>$ 60 Sunday Dinner</a>                 </li>             </ul>         </div>         </div>`)[0];
+                popup_053b59c5cf78456bf3fd1af2bac65c26.setContent(html_acea794321708f2c63ad0e8e6455df99);
+            
+        
+
+        marker_693456842b28d1c2d865a83f0993d206.bindPopup(popup_053b59c5cf78456bf3fd1af2bac65c26)
+        ;
+
+        
+    
+    
+            marker_693456842b28d1c2d865a83f0993d206.bindTooltip(
+                `<div>
+                     Meet the Meat
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_37642c647bed1488b8d2060f6c5cda57 = L.marker(
+                [40.75646535, -73.98063878060343],
+                {
+}
+            ).addTo(map_1fe24e72c6c26a36cc8997d9532a7447);
+        
+    
+        var popup_16d92ab6b41ba5cf13e150a43e087806 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1a6ae9f4dd364ddf1d8a0ab2ba67fa93 = $(`<div id="html_1a6ae9f4dd364ddf1d8a0ab2ba67fa93" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif;">             <h4 style="margin: 0;">                 <a href="https://www.chazzpalminterinyc.com/new-york-city" target="_blank" style="text-decoration: none; color: #007BFF;">                     <b>Chazz Palminteri Italian Restaurant</b>                 </a>             </h4>             <p style="margin-top: 5px; margin-bottom: 5px;">                 Chazz Palminteri's is an upscale Italian eatery, opened by actor Chazz Palminteri in partnership with the owners of Empire Steak House. This restaurant offers the finest meat, seafood, and pasta dishes, as well as antipasto and traditional Italian desserts. Chazz offers a global wine list boasting close to 250 wines and is curated to pair with the bold, rich flavors of classic Italian fare. There's also custom cocktails featuring spirits blended with seasonal ingredients, with an Italian twist.             </p>             <ul>                 <li>                     <a href="https://www.nyctourism.com/restaurant-week/chazz-palminteri-italian-restaurant/" target="_blank" style="text-decoration: none; color: #007BFF;">$ 30 Lunch</li><li>$ 60 Dinner</li><li>$ 60 Sunday Dinner</a>                 </li>             </ul>         </div>         </div>`)[0];
+                popup_16d92ab6b41ba5cf13e150a43e087806.setContent(html_1a6ae9f4dd364ddf1d8a0ab2ba67fa93);
+            
+        
+
+        marker_37642c647bed1488b8d2060f6c5cda57.bindPopup(popup_16d92ab6b41ba5cf13e150a43e087806)
+        ;
+
+        
+    
+    
+            marker_37642c647bed1488b8d2060f6c5cda57.bindTooltip(
+                `<div>
+                     Chazz Palminteri Italian Restaurant
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_9e7fc280b68873207ccb764f6d6e44cc = L.marker(
+                [40.756732, -73.9843046],
+                {
+}
+            ).addTo(map_1fe24e72c6c26a36cc8997d9532a7447);
+        
+    
+        var popup_2e614dfbe6d9d5742360776937914b92 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_dd72d0cbe82de460b79ac58f74041a18 = $(`<div id="html_dd72d0cbe82de460b79ac58f74041a18" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif;">             <h4 style="margin: 0;">                 <a href="https://www.hfcnyc.com/" target="_blank" style="text-decoration: none; color: #007BFF;">                     <b>Hunt & Fish Club NYC</b>                 </a>             </h4>             <p style="margin-top: 5px; margin-bottom: 5px;">                 Hunt & Fish Club NYC debuted in Midtown Manhattan in 2014 with a classic yet contemporary menu of exceptionally prepared steaks and game plus a unique selection of canapés, seafood offerings, as well as an extensive wine list and specialty cocktails. Hunt & Fish Club NYC is pre-theater and post-theater friendly. The restaurant offers three spaces for private events up to 250 people.             </p>             <ul>                 <li>                     <a href="https://www.nyctourism.com/restaurant-week/hunt-fish-club-nyc/" target="_blank" style="text-decoration: none; color: #007BFF;">$ 60 Dinner</a>                 </li>             </ul>         </div>         </div>`)[0];
+                popup_2e614dfbe6d9d5742360776937914b92.setContent(html_dd72d0cbe82de460b79ac58f74041a18);
+            
+        
+
+        marker_9e7fc280b68873207ccb764f6d6e44cc.bindPopup(popup_2e614dfbe6d9d5742360776937914b92)
+        ;
+
+        
+    
+    
+            marker_9e7fc280b68873207ccb764f6d6e44cc.bindTooltip(
+                `<div>
+                     Hunt & Fish Club NYC
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_5dd19f9c54a0950f5889c0aa34b158ea = L.marker(
+                [40.75208440816326, -73.98133134693877],
+                {
+}
+            ).addTo(map_1fe24e72c6c26a36cc8997d9532a7447);
+        
+    
+        var popup_e948a61183057bfd1733a63beb702f10 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3a8b07597f1331b6c1c8b2547eea798e = $(`<div id="html_3a8b07597f1331b6c1c8b2547eea798e" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif;">             <h4 style="margin: 0;">                 <a href="https://benjaminsteakhouse.com/prime" target="_blank" style="text-decoration: none; color: #007BFF;">                     <b>Benjamin Prime</b>                 </a>             </h4>             <p style="margin-top: 5px; margin-bottom: 5px;">                 Founded in 2006, the family owned and operated Benjamin Restaurant Group has grown to comprise some of the New York metro area's premier culinary destinations, including Benjamin Steakhouse and The Sea Fire Grill. Offering high quality food in luxurious environments, Benjamin Prime melds together classic steakhouse fare and fresh and vibrant seafood with the grill as the main focus. All locations offer the quintessential New York dining experience that business executives, locals and celebrities have come to know and love.             </p>             <ul>                 <li>                     <a href="https://www.nyctourism.com/restaurant-week/benjamin-prime/" target="_blank" style="text-decoration: none; color: #007BFF;">$ 45 Lunch</li><li>$ 60 Dinner</li><li>$ 60 Sunday Dinner</a>                 </li>             </ul>         </div>         </div>`)[0];
+                popup_e948a61183057bfd1733a63beb702f10.setContent(html_3a8b07597f1331b6c1c8b2547eea798e);
+            
+        
+
+        marker_5dd19f9c54a0950f5889c0aa34b158ea.bindPopup(popup_e948a61183057bfd1733a63beb702f10)
+        ;
+
+        
+    
+    
+            marker_5dd19f9c54a0950f5889c0aa34b158ea.bindTooltip(
+                `<div>
+                     Benjamin Prime
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_d86ed26f26caf56789f49dd7ed13b5b4 = L.marker(
+                [40.7537328, -73.9664913],
+                {
+}
+            ).addTo(map_1fe24e72c6c26a36cc8997d9532a7447);
+        
+    
+        var popup_b45441ebc3677af4612e7f10b0dd520b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f6f139128005a4fa6fe86b0d61adcf9a = $(`<div id="html_f6f139128005a4fa6fe86b0d61adcf9a" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif;">             <h4 style="margin: 0;">                 <a href="https://copinettenyc.com/" target="_blank" style="text-decoration: none; color: #007BFF;">                     <b>Copinette</b>                 </a>             </h4>             <p style="margin-top: 5px; margin-bottom: 5px;">                 Midtown East's Copinette serves American cuisine with strong French influences. The dining room has modern decor, and there is a heated canopy for outdoor dining. The menu encompasses dishes such as pan-roasted salmon, steak frites and some Italian-leaning entrees like fettucine Bolognese.             </p>             <ul>                 <li>                     <a href="https://www.nyctourism.com/restaurant-week/copinette/" target="_blank" style="text-decoration: none; color: #007BFF;">$ 30 Lunch</li><li>$ 45 Dinner</li><li>$ 45 Sunday Dinner</a>                 </li>             </ul>         </div>         </div>`)[0];
+                popup_b45441ebc3677af4612e7f10b0dd520b.setContent(html_f6f139128005a4fa6fe86b0d61adcf9a);
+            
+        
+
+        marker_d86ed26f26caf56789f49dd7ed13b5b4.bindPopup(popup_b45441ebc3677af4612e7f10b0dd520b)
+        ;
+
+        
+    
+    
+            marker_d86ed26f26caf56789f49dd7ed13b5b4.bindTooltip(
+                `<div>
+                     Copinette
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_692774fc4a8d608b510b504cee0ae38d = L.marker(
+                [40.75996915, -73.98891683689364],
+                {
+}
+            ).addTo(map_1fe24e72c6c26a36cc8997d9532a7447);
+        
+    
+        var popup_b1b6e4e376f968583f3febddfdc346fa = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cb3f85192d0f5c657749def20f42f5c2 = $(`<div id="html_cb3f85192d0f5c657749def20f42f5c2" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif;">             <h4 style="margin: 0;">                 <a href="https://frankieandjohnnies.com/" target="_blank" style="text-decoration: none; color: #007BFF;">                     <b>Frankie & Johnnie's Steakhouse—46th Street</b>                 </a>             </h4>             <p style="margin-top: 5px; margin-bottom: 5px;">                 With two locations in Midtown, plus some serious steaks and chops, this welcoming and unpretentious spot has quite the history as a real Prohibition-era speakeasy. Now accessible to all—with no password required—the menu offers great aged beef with its rightfully famous steak sauce, potatoes done eight ways and all the de rigueur steakhouse sides.             </p>             <ul>                 <li>                     <a href="https://www.nyctourism.com/restaurant-week/frankie-johnnies-steakhouse-46th-street/" target="_blank" style="text-decoration: none; color: #007BFF;">$ 45 Lunch</li><li>$ 60 Dinner</li><li>$ 60 Sunday Dinner</a>                 </li>             </ul>         </div>         </div>`)[0];
+                popup_b1b6e4e376f968583f3febddfdc346fa.setContent(html_cb3f85192d0f5c657749def20f42f5c2);
+            
+        
+
+        marker_692774fc4a8d608b510b504cee0ae38d.bindPopup(popup_b1b6e4e376f968583f3febddfdc346fa)
+        ;
+
+        
+    
+    
+            marker_692774fc4a8d608b510b504cee0ae38d.bindTooltip(
+                `<div>
+                     Frankie & Johnnie's Steakhouse—46th Street
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_2a27298ae388086c893ff5f3f2e9e9ef = L.marker(
+                [40.737584, -73.988142],
+                {
+}
+            ).addTo(map_1fe24e72c6c26a36cc8997d9532a7447);
+        
+    
+        var popup_dfb0f1ab2531040c15cbaebaa3646600 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_37e2e4a2d7c377bd73c725fc99005003 = $(`<div id="html_37e2e4a2d7c377bd73c725fc99005003" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif;">             <h4 style="margin: 0;">                 <a href="https://oceansnewyork.com/" target="_blank" style="text-decoration: none; color: #007BFF;">                     <b>Oceans</b>                 </a>             </h4>             <p style="margin-top: 5px; margin-bottom: 5px;">                 With a name like Oceans, it’s no surprise to learn that this restaurant’s menu is inspired by fresh catches from the Atlantic, Pacific and Mediterranean. Start with a selection of sushi or something from the raw bar. Small plates like soups, salads and crab cakes are followed by “from the sea” choices—salmon, black cod, sea bass—as well as “from the land” dishes like filet mignon, braised short rib and even a cauliflower steak for vegans.             </p>             <ul>                 <li>                     <a href="https://www.nyctourism.com/restaurant-week/oceans/" target="_blank" style="text-decoration: none; color: #007BFF;">$ 60 Dinner</li><li>$ 60 Sunday Dinner</a>                 </li>             </ul>         </div>         </div>`)[0];
+                popup_dfb0f1ab2531040c15cbaebaa3646600.setContent(html_37e2e4a2d7c377bd73c725fc99005003);
+            
+        
+
+        marker_2a27298ae388086c893ff5f3f2e9e9ef.bindPopup(popup_dfb0f1ab2531040c15cbaebaa3646600)
+        ;
+
+        
+    
+    
+            marker_2a27298ae388086c893ff5f3f2e9e9ef.bindTooltip(
+                `<div>
+                     Oceans
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_f5840b9b8b4580bce4459e8553f3bc4c = L.marker(
+                [40.75555415, -73.99431235],
+                {
+}
+            ).addTo(map_1fe24e72c6c26a36cc8997d9532a7447);
+        
+    
+        var popup_35295359d0e0d22af4b67bba918ce1be = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2589ee2cfb98ec6145cd92e3401f7b8d = $(`<div id="html_2589ee2cfb98ec6145cd92e3401f7b8d" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif;">             <h4 style="margin: 0;">                 <a href="https://www.steakfritesbistro.com/" target="_blank" style="text-decoration: none; color: #007BFF;">                     <b>Steak Frites Bistro</b>                 </a>             </h4>             <p style="margin-top: 5px; margin-bottom: 5px;">                 At his newly opened Steak Frites Bistro, chef/owner Adam Schop brings classic French fare, in an environment familiar to popular bistros found on the side streets of Paris, to Hell’s Kitchen. His French cuisine is presented through a New York lens, marrying the two cultures and adding another level of familiarity. Steak Frites Bistro’s dinner menu is concise and provides options for every diner—from those looking to indulge in a multicourse French meal to those on the hunt for a quick, delicious bite—including French, Francophiles, and neighborhood clientele.             </p>             <ul>                 <li>                     <a href="https://www.nyctourism.com/restaurant-week/steak-frites-bistro/" target="_blank" style="text-decoration: none; color: #007BFF;">$ 30 Lunch</li><li>$ 60 Dinner</li><li>$ 30 Sunday Lunch / Brunch</li><li>$ 60 Sunday Dinner</a>                 </li>             </ul>         </div>         </div>`)[0];
+                popup_35295359d0e0d22af4b67bba918ce1be.setContent(html_2589ee2cfb98ec6145cd92e3401f7b8d);
+            
+        
+
+        marker_f5840b9b8b4580bce4459e8553f3bc4c.bindPopup(popup_35295359d0e0d22af4b67bba918ce1be)
+        ;
+
+        
+    
+    
+            marker_f5840b9b8b4580bce4459e8553f3bc4c.bindTooltip(
+                `<div>
+                     Steak Frites Bistro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_21430c6b089b2e9f35c59648eeb85a7b = L.marker(
+                [40.7096869, -74.0139312],
+                {
+}
+            ).addTo(map_1fe24e72c6c26a36cc8997d9532a7447);
+        
+    
+        var popup_69a856ae1a73a777b568b95f94105946 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9e74ba9539abe4a898c5f8df586d14e1 = $(`<div id="html_9e74ba9539abe4a898c5f8df586d14e1" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif;">             <h4 style="margin: 0;">                 <a href="https://www.mortons.com/newyorkwtc" target="_blank" style="text-decoration: none; color: #007BFF;">                     <b>Morton's The Steakhouse—World Trade Center</b>                 </a>             </h4>             <p style="margin-top: 5px; margin-bottom: 5px;">                 Nestled in Lower Manhattan near the World Trade Center, Morton's The Steakhouse is a true blend of classic cuisine and contemporary style. Morton's features USDA prime aged beef, world-class wines, cocktails from martinis to Manhattans, succulent seafood, timeless steakhouse sides and decadent desserts. The restaurant is located just steps from the 9/11 Memorial, while the Statue of Liberty, Ellis Island, Wall Street and City Hall are all nearby.             </p>             <ul>                 <li>                     <a href="https://www.nyctourism.com/restaurant-week/mortons-the-steakhouse-world-trade-center/" target="_blank" style="text-decoration: none; color: #007BFF;">$ 45 Lunch</li><li>$ 60 Dinner</li><li>$ 60 Sunday Dinner</a>                 </li>             </ul>         </div>         </div>`)[0];
+                popup_69a856ae1a73a777b568b95f94105946.setContent(html_9e74ba9539abe4a898c5f8df586d14e1);
+            
+        
+
+        marker_21430c6b089b2e9f35c59648eeb85a7b.bindPopup(popup_69a856ae1a73a777b568b95f94105946)
+        ;
+
+        
+    
+    
+            marker_21430c6b089b2e9f35c59648eeb85a7b.bindTooltip(
+                `<div>
+                     Morton's The Steakhouse—World Trade Center
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a1adbacf3995da9ef8af131c0f57745d = L.marker(
+                [40.7373226, -73.9881724],
+                {
+}
+            ).addTo(map_1fe24e72c6c26a36cc8997d9532a7447);
+        
+    
+        var popup_877ba5a301b36dcd6e788a1c6e4da774 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_02f4d909d898b40bf3f962c9ec2d8df4 = $(`<div id="html_02f4d909d898b40bf3f962c9ec2d8df4" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif;">             <h4 style="margin: 0;">                 <a href="https://www.boucherieus.com/location/boucherie-union-square" target="_blank" style="text-decoration: none; color: #007BFF;">                     <b>Boucherie Union Square</b>                 </a>             </h4>             <p style="margin-top: 5px; margin-bottom: 5px;">                 At Boucherie Union Square, a traditional French brasserie and steakhouse, corporate executive chef Maxime Kien prepares a menu of French classics and timeless bistro favorites, in addition to dry-aged steaks. The beverage program boasts an inspired menu of absinthe-driven cocktails. Surrounded by walls covered with majestic wooden-framed mirrors and original Belle Époque posters, seating options include pristine white marble and wood bistro tables, leather booths and a 32-foot handmade pewter bar, all of which make the 222-seat restaurant feel timeless and intimate.             </p>             <ul>                 <li>                     <a href="https://www.nyctourism.com/restaurant-week/boucherie-union-square/" target="_blank" style="text-decoration: none; color: #007BFF;">$ 45 Lunch</li><li>$ 60 Dinner</a>                 </li>             </ul>         </div>         </div>`)[0];
+                popup_877ba5a301b36dcd6e788a1c6e4da774.setContent(html_02f4d909d898b40bf3f962c9ec2d8df4);
+            
+        
+
+        marker_a1adbacf3995da9ef8af131c0f57745d.bindPopup(popup_877ba5a301b36dcd6e788a1c6e4da774)
+        ;
+
+        
+    
+    
+            marker_a1adbacf3995da9ef8af131c0f57745d.bindTooltip(
+                `<div>
+                     Boucherie Union Square
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_da672483a99e33be90349ec937082e6a = L.marker(
+                [40.7876494, -73.9767024],
+                {
+}
+            ).addTo(map_1fe24e72c6c26a36cc8997d9532a7447);
+        
+    
+        var popup_61d2b21787c762b6b72863d78f4b2788 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6ea7469f13bd26500ea9446749dc3ad6 = $(`<div id="html_6ea7469f13bd26500ea9446749dc3ad6" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif;">             <h4 style="margin: 0;">                 <a href="https://www.frenchroastnyc.com/" target="_blank" style="text-decoration: none; color: #007BFF;">                     <b>French Roast</b>                 </a>             </h4>             <p style="margin-top: 5px; margin-bottom: 5px;">                 This Upper West Side restaurant at West 85th Street and Broadway recreates the lively atmosphere of a Parisian bistro. French Roast pays homage to the City of Light with standards like steak frites, salad frisée aux lardons and croque monsieur. Whether you dine alone with a newspaper or with a group of friends, it’s always welcoming.             </p>             <ul>                 <li>                     <a href="https://www.nyctourism.com/restaurant-week/french-roast/" target="_blank" style="text-decoration: none; color: #007BFF;">$ 30 Lunch</li><li>$ 45 Dinner</a>                 </li>             </ul>         </div>         </div>`)[0];
+                popup_61d2b21787c762b6b72863d78f4b2788.setContent(html_6ea7469f13bd26500ea9446749dc3ad6);
+            
+        
+
+        marker_da672483a99e33be90349ec937082e6a.bindPopup(popup_61d2b21787c762b6b72863d78f4b2788)
+        ;
+
+        
+    
+    
+            marker_da672483a99e33be90349ec937082e6a.bindTooltip(
+                `<div>
+                     French Roast
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_0c21b449cab2d9fcf6e04bed6ffe23b8 = L.marker(
+                [40.749353, -73.96998474438958],
+                {
+}
+            ).addTo(map_1fe24e72c6c26a36cc8997d9532a7447);
+        
+    
+        var popup_56bfd8e491a562cacea5f6fbcb308e9b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_55a204b5f6ac797f65741831b27ee843 = $(`<div id="html_55a204b5f6ac797f65741831b27ee843" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif;">             <h4 style="margin: 0;">                 <a href="https://www.tudorcitysteakhouse.com/" target="_blank" style="text-decoration: none; color: #007BFF;">                     <b>Tudor City Steakhouse</b>                 </a>             </h4>             <p style="margin-top: 5px; margin-bottom: 5px;">                 Located in a historic enclave, Tudor City Steakhouse is a "next generation" steakhouse, offering dishes not typically associated with the genre. Besides USDA Prime Beef, dry aged on-site, they salute their location just across the street from the United Nations with a selection of international dishes such as sushi ceviche, pasta and tamale. The relaxed elegance of their dining rooms and the the flexible flow of their bi-level space make Tudor City Steakhouse an option for a wide range of occasions, from romantic dining a deux or happy hour gatherings to receptions for 300.             </p>             <ul>                 <li>                     <a href="https://www.nyctourism.com/restaurant-week/tudor-city-steakhouse/" target="_blank" style="text-decoration: none; color: #007BFF;">$ 30 Lunch</li><li>$ 60 Dinner</li><li>$ 60 Sunday Dinner</a>                 </li>             </ul>         </div>         </div>`)[0];
+                popup_56bfd8e491a562cacea5f6fbcb308e9b.setContent(html_55a204b5f6ac797f65741831b27ee843);
+            
+        
+
+        marker_0c21b449cab2d9fcf6e04bed6ffe23b8.bindPopup(popup_56bfd8e491a562cacea5f6fbcb308e9b)
+        ;
+
+        
+    
+    
+            marker_0c21b449cab2d9fcf6e04bed6ffe23b8.bindTooltip(
+                `<div>
+                     Tudor City Steakhouse
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_45a71e196e9ccb115f9fb6c17c0bcdf5 = L.marker(
+                [40.75532145, -73.98067776309588],
+                {
+}
+            ).addTo(map_1fe24e72c6c26a36cc8997d9532a7447);
+        
+    
+        var popup_fcd86761b91520b370dab47af29aad5d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9c38859e7088c5bdeaa5276be12342d3 = $(`<div id="html_9c38859e7088c5bdeaa5276be12342d3" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif;">             <h4 style="margin: 0;">                 <a href="https://www.striphouse.com/location/striphouse-midtown" target="_blank" style="text-decoration: none; color: #007BFF;">                     <b>Strip House Midtown</b>                 </a>             </h4>             <p style="margin-top: 5px; margin-bottom: 5px;">                 Strip House Midtown brings all the Strip House signatures to a bi-level space on 44th Street that offers lunch, dinner and private dining. Diners can relax with a classic cocktail at the bar, or delve into the full steakhouse experience. The charred cuts are paired with decadent sides, and the siren-red interior matches Old World glamour—the walls are adorned with original Studio Manassé prints of 1930s burlesque stars—with modern style and sophistication. The namesake cut isn't the only thing to marvel upon at this restaurant, which was named a top steakhouse by Zagat and awarded four stars by Forbes.             </p>             <ul>                 <li>                     <a href="https://www.nyctourism.com/restaurant-week/strip-house-midtown/" target="_blank" style="text-decoration: none; color: #007BFF;">$ 60 Lunch</li><li>$ 60 Dinner</li><li>$ 60 Sunday Dinner</a>                 </li>             </ul>         </div>         </div>`)[0];
+                popup_fcd86761b91520b370dab47af29aad5d.setContent(html_9c38859e7088c5bdeaa5276be12342d3);
+            
+        
+
+        marker_45a71e196e9ccb115f9fb6c17c0bcdf5.bindPopup(popup_fcd86761b91520b370dab47af29aad5d)
+        ;
+
+        
+    
+    
+            marker_45a71e196e9ccb115f9fb6c17c0bcdf5.bindTooltip(
+                `<div>
+                     Strip House Midtown
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a42cad4e749153ff074fec4c1a9e3581 = L.marker(
+                [40.7617296, -73.9806295],
+                {
+}
+            ).addTo(map_1fe24e72c6c26a36cc8997d9532a7447);
+        
+    
+        var popup_c808373cc1be33a358c1b9041162f449 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_68ecfe16862f5593e8bcc2e4c8ddf4a9 = $(`<div id="html_68ecfe16862f5593e8bcc2e4c8ddf4a9" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif;">             <h4 style="margin: 0;">                 <a href="https://www.ocean-prime.com/locations/new-york-city" target="_blank" style="text-decoration: none; color: #007BFF;">                     <b>Ocean Prime</b>                 </a>             </h4>             <p style="margin-top: 5px; margin-bottom: 5px;">                 This award-winning restaurant and lounge from renowned restaurateur Cameron Mitchell is designed to please all palates. The chef-led menu unites fresh seafood and choice steaks, while a service team steeped in the traditions of Midwestern hospitality works to ensure that each and every guest feels like a VIP. With its exceptional food and drink and a luxurious atmosphere, this distinctive Midtown spot is an ideal place to socialize, talk business, celebrate and indulge.             </p>             <ul>                 <li>                     <a href="https://www.nyctourism.com/restaurant-week/ocean-prime/" target="_blank" style="text-decoration: none; color: #007BFF;">$ 60 Lunch</li><li>$ 60 Dinner</li><li>$ 60 Sunday Dinner</a>                 </li>             </ul>         </div>         </div>`)[0];
+                popup_c808373cc1be33a358c1b9041162f449.setContent(html_68ecfe16862f5593e8bcc2e4c8ddf4a9);
+            
+        
+
+        marker_a42cad4e749153ff074fec4c1a9e3581.bindPopup(popup_c808373cc1be33a358c1b9041162f449)
+        ;
+
+        
+    
+    
+            marker_a42cad4e749153ff074fec4c1a9e3581.bindTooltip(
+                `<div>
+                     Ocean Prime
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a6ce3860687e890dc8133ed5d0298208 = L.marker(
+                [40.75186025, -73.97234060562664],
+                {
+}
+            ).addTo(map_1fe24e72c6c26a36cc8997d9532a7447);
+        
+    
+        var popup_5b99cf70c4a535f6fdef372f9fb69fba = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7ed0618f0fd6113a0ec10ad9574d377d = $(`<div id="html_7ed0618f0fd6113a0ec10ad9574d377d" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif;">             <h4 style="margin: 0;">                 <a href="https://benandjackssteakhouse.com/" target="_blank" style="text-decoration: none; color: #007BFF;">                     <b>Ben & Jack's Steakhouse—44th Street</b>                 </a>             </h4>             <p style="margin-top: 5px; margin-bottom: 5px;">                 Ben and Jack Sinanaj, long-time waiters at Peter Luger’s, have opened a classic steakhouse all their own. In addition to offering prime dry-aged porterhouse steaks, including their signature 44-ouncer, as well as other flavorful cuts of meat, the restaurant offers an array of seafood, from fresh oysters to a hefty four-pound lobster. If you can manage to squeeze in dessert, try the hot-fudge sundae or the German apple strudel. An extensive wine list is available too.             </p>             <ul>                 <li>                     <a href="https://www.nyctourism.com/restaurant-week/ben-jacks-steakhouse-44th-street/" target="_blank" style="text-decoration: none; color: #007BFF;">$ 45 Lunch</li><li>$ 60 Dinner</a>                 </li>             </ul>         </div>         </div>`)[0];
+                popup_5b99cf70c4a535f6fdef372f9fb69fba.setContent(html_7ed0618f0fd6113a0ec10ad9574d377d);
+            
+        
+
+        marker_a6ce3860687e890dc8133ed5d0298208.bindPopup(popup_5b99cf70c4a535f6fdef372f9fb69fba)
+        ;
+
+        
+    
+    
+            marker_a6ce3860687e890dc8133ed5d0298208.bindTooltip(
+                `<div>
+                     Ben & Jack's Steakhouse—44th Street
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_d7358c5c55d46903525fb6db0f8457c4 = L.marker(
+                [40.7402994, -74.006242],
+                {
+}
+            ).addTo(map_1fe24e72c6c26a36cc8997d9532a7447);
+        
+    
+        var popup_c55fdf4cd4948dfd9f903a236893face = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9af01a94e299cdc783d39b88d94daa6c = $(`<div id="html_9af01a94e299cdc783d39b88d94daa6c" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif;">             <h4 style="margin: 0;">                 <a href="https://www.catchrestaurants.com/location/catch-nyc" target="_blank" style="text-decoration: none; color: #007BFF;">                     <b>Catch NYC</b>                 </a>             </h4>             <p style="margin-top: 5px; margin-bottom: 5px;">                 A globally influenced seafood restaurant, set in a landmark building in Manhattan’s Meatpacking District, Catch NYC features modern renditions of classic dishes served in a streaming, shareable style of dining. Marrying simple yet elegant seafood, sushi, and steak with excellent service and a lively atmosphere, the 400-seat, tri-level restaurant, complete with al fresco dining on the roof, features signature dishes including the Catch Roll, Truffle Sashimi, A5 Wagyu on a hot rock, Mushroom Spaghetti, and Cantonese Lobster.             </p>             <ul>                 <li>                     <a href="https://www.nyctourism.com/restaurant-week/catch-nyc/" target="_blank" style="text-decoration: none; color: #007BFF;">$ 60 Dinner</li><li>$ 60 Sunday Dinner</a>                 </li>             </ul>         </div>         </div>`)[0];
+                popup_c55fdf4cd4948dfd9f903a236893face.setContent(html_9af01a94e299cdc783d39b88d94daa6c);
+            
+        
+
+        marker_d7358c5c55d46903525fb6db0f8457c4.bindPopup(popup_c55fdf4cd4948dfd9f903a236893face)
+        ;
+
+        
+    
+    
+            marker_d7358c5c55d46903525fb6db0f8457c4.bindTooltip(
+                `<div>
+                     Catch NYC
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_19f37b394bb1c16748be9a70e4d676f8 = L.marker(
+                [40.7445195, -73.9904827],
+                {
+}
+            ).addTo(map_1fe24e72c6c26a36cc8997d9532a7447);
+        
+    
+        var popup_fd25d26a8837a6f7c32a93822843af54 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1877fd7bff4b576e99e95be266877ab6 = $(`<div id="html_1877fd7bff4b576e99e95be266877ab6" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif;">             <h4 style="margin: 0;">                 <a href="https://www.theflatironroom.com/nomad-home" target="_blank" style="text-decoration: none; color: #007BFF;">                     <b>The Flatiron Room - NoMad</b>                 </a>             </h4>             <p style="margin-top: 5px; margin-bottom: 5px;">                 Since opening in 2012, The Flatiron Room has reenergized the Manhattan nightlife scene as a home for nostalgia. The menu takes shape around whiskey and, similar to the spirit’s purity, the dishes served are meant to be enjoyed in their natural state. Try small plates like shrimp and scallop meatballs or chimichurri steak bites, or main dishes like bourbon smoked fried chicken under glass (with ghost pepper honey) or bison and bacon meatloaf.             </p>             <ul>                 <li>                     <a href="https://www.nyctourism.com/restaurant-week/the-flatiron-room/" target="_blank" style="text-decoration: none; color: #007BFF;">$ 60 Dinner</li><li>$ 60 Sunday Dinner</a>                 </li>             </ul>         </div>         </div>`)[0];
+                popup_fd25d26a8837a6f7c32a93822843af54.setContent(html_1877fd7bff4b576e99e95be266877ab6);
+            
+        
+
+        marker_19f37b394bb1c16748be9a70e4d676f8.bindPopup(popup_fd25d26a8837a6f7c32a93822843af54)
+        ;
+
+        
+    
+    
+            marker_19f37b394bb1c16748be9a70e4d676f8.bindTooltip(
+                `<div>
+                     The Flatiron Room - NoMad
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_43d3d5e76d336a55685e207477209c27 = L.marker(
+                [40.7630677, -73.96869608648203],
+                {
+}
+            ).addTo(map_1fe24e72c6c26a36cc8997d9532a7447);
+        
+    
+        var popup_5b2496738fd3ad1b2f2831ec8ca62d17 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7bc81e6f1832e6bee90e3dd23c789526 = $(`<div id="html_7bc81e6f1832e6bee90e3dd23c789526" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif;">             <h4 style="margin: 0;">                 <a href="https://tbar.nyc/" target="_blank" style="text-decoration: none; color: #007BFF;">                     <b>T Bar</b>                 </a>             </h4>             <p style="margin-top: 5px; margin-bottom: 5px;">                 New York has some of the best steaks in the country, and this restaurant on the Upper East Side certainly holds its own. Formerly the Lenox Room, it reopened as T-Bar Steak and Lounge in 2007 with a renovated downtown décor. This new T Bar is a tri-level space with a sensual luxe vibe, the perfect setting to experience a lavish menu featuring accents and flavors from the world over.             </p>             <ul>                 <li>                     <a href="https://www.nyctourism.com/restaurant-week/t-bar/" target="_blank" style="text-decoration: none; color: #007BFF;">$ 45 Lunch</li><li>$ 60 Dinner</li><li>$ 30 Sunday Lunch / Brunch</li><li>$ 60 Sunday Dinner</a>                 </li>             </ul>         </div>         </div>`)[0];
+                popup_5b2496738fd3ad1b2f2831ec8ca62d17.setContent(html_7bc81e6f1832e6bee90e3dd23c789526);
+            
+        
+
+        marker_43d3d5e76d336a55685e207477209c27.bindPopup(popup_5b2496738fd3ad1b2f2831ec8ca62d17)
+        ;
+
+        
+    
+    
+            marker_43d3d5e76d336a55685e207477209c27.bindTooltip(
+                `<div>
+                     T Bar
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8fcdc0846c6605da8e4e41c8d105d0f2 = L.marker(
+                [40.735337900000005, -73.98846304939701],
+                {
+}
+            ).addTo(map_1fe24e72c6c26a36cc8997d9532a7447);
+        
+    
+        var popup_c8ab063f01f83da12b66fe0c979ef5d1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7f89b970b021a694cea4a849cac4d8c8 = $(`<div id="html_7f89b970b021a694cea4a849cac4d8c8" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif;">             <h4 style="margin: 0;">                 <a href="https://www.thestandnyc.com/" target="_blank" style="text-decoration: none; color: #007BFF;">                     <b>The Stand</b>                 </a>             </h4>             <p style="margin-top: 5px; margin-bottom: 5px;">                 This Union Square-area comedy club has hosted both bold-faced talent and up-and-comers, and features an impressive menu of Italian victuals. Look out for pizzas, steak, rotisserie chicken, an all-day brunch and a menu of tasty mixed drinks.             </p>             <ul>                 <li>                     <a href="https://www.nyctourism.com/restaurant-week/the-stand/" target="_blank" style="text-decoration: none; color: #007BFF;">$ 30 Lunch</li><li>$ 60 Dinner</li><li>$ 30 Sunday Lunch / Brunch</li><li>$ 60 Sunday Dinner</a>                 </li>             </ul>         </div>         </div>`)[0];
+                popup_c8ab063f01f83da12b66fe0c979ef5d1.setContent(html_7f89b970b021a694cea4a849cac4d8c8);
+            
+        
+
+        marker_8fcdc0846c6605da8e4e41c8d105d0f2.bindPopup(popup_c8ab063f01f83da12b66fe0c979ef5d1)
+        ;
+
+        
+    
+    
+            marker_8fcdc0846c6605da8e4e41c8d105d0f2.bindTooltip(
+                `<div>
+                     The Stand
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c1f39d1b2b0dffe66c49c5c347110164 = L.marker(
+                [40.760102450000005, -73.96553578209475],
+                {
+}
+            ).addTo(map_1fe24e72c6c26a36cc8997d9532a7447);
+        
+    
+        var popup_850dc2c0d6bc3291a76cddb99d895961 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_546fbd736e17107607b558bb1e3cd4e6 = $(`<div id="html_546fbd736e17107607b558bb1e3cd4e6" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif;">             <h4 style="margin: 0;">                 <a href="https://www.clubasteakhouse.com/" target="_blank" style="text-decoration: none; color: #007BFF;">                     <b>Club A Steakhouse</b>                 </a>             </h4>             <p style="margin-top: 5px; margin-bottom: 5px;">                 Not far from Sutton Place and the Queensboro Bridge, this creation of restaurateur Bruno Selimaj (of Bruno Restaurant fame) combines characteristics of a traditional steakhouse with New World modernism in both the menu and decor. Executive chef Jean Christophe Villard—a Five Star Diamond Award winner formerly of such notables as Les Deux Gamins, Cafe Centro and Bobby Van's Steakhouse—offers an expectation of culinary perfection, whether it's the Prime dry aged Porterhouse steak or the grilled Atlantic blue fin tuna. Musical director Daniel Nye hosts the second floor piano lounge nightly, as he did at Bruno Restaurant.             </p>             <ul>                 <li>                     <a href="https://www.nyctourism.com/restaurant-week/club-a-steakhouse/" target="_blank" style="text-decoration: none; color: #007BFF;">$ 60 Dinner</li><li>$ 60 Sunday Dinner</a>                 </li>             </ul>         </div>         </div>`)[0];
+                popup_850dc2c0d6bc3291a76cddb99d895961.setContent(html_546fbd736e17107607b558bb1e3cd4e6);
+            
+        
+
+        marker_c1f39d1b2b0dffe66c49c5c347110164.bindPopup(popup_850dc2c0d6bc3291a76cddb99d895961)
+        ;
+
+        
+    
+    
+            marker_c1f39d1b2b0dffe66c49c5c347110164.bindTooltip(
+                `<div>
+                     Club A Steakhouse
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_9e6e1178666f26e11f08376352d8618d = L.marker(
+                [40.7552496, -73.985979706842],
+                {
+}
+            ).addTo(map_1fe24e72c6c26a36cc8997d9532a7447);
+        
+    
+        var popup_20fdb028c13ac8a9c73ae57208c21f8f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_28e7987a935d882040199e530ef91e0d = $(`<div id="html_28e7987a935d882040199e530ef91e0d" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif;">             <h4 style="margin: 0;">                 <a href="https://www.charliepalmersteak.com/charlie-palmer-steak-iv" target="_blank" style="text-decoration: none; color: #007BFF;">                     <b>Charlie Palmer Steak IV</b>                 </a>             </h4>             <p style="margin-top: 5px; margin-bottom: 5px;">                 With dazzling Times Square views overlooking Broadway and 42nd Street from an enviable fourth-floor corner perch in Midtown Manhattan, Charlie Palmer Steak IV brings together two of the most iconic names in hospitality. Inspired by the rich history of The Knickerbocker, a 1906 landmarked New York City treasure that serves as Times Square's premier luxury lifestyle hotel, chef Palmer adds new twists to his acclaimed cuisine to create the hotel's signature "Honest American Cuisine" in an open-action kitchen.             </p>             <ul>                 <li>                     <a href="https://www.nyctourism.com/restaurant-week/charlie-palmer-steak-iv/" target="_blank" style="text-decoration: none; color: #007BFF;">$ 45 Lunch</li><li>$ 60 Dinner</a>                 </li>             </ul>         </div>         </div>`)[0];
+                popup_20fdb028c13ac8a9c73ae57208c21f8f.setContent(html_28e7987a935d882040199e530ef91e0d);
+            
+        
+
+        marker_9e6e1178666f26e11f08376352d8618d.bindPopup(popup_20fdb028c13ac8a9c73ae57208c21f8f)
+        ;
+
+        
+    
+    
+            marker_9e6e1178666f26e11f08376352d8618d.bindTooltip(
+                `<div>
+                     Charlie Palmer Steak IV
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8cdd92644a0ccace9d01249d3cfcda6b = L.marker(
+                [40.6879987, -73.98821205],
+                {
+}
+            ).addTo(map_1fe24e72c6c26a36cc8997d9532a7447);
+        
+    
+        var popup_93102ea84456152d7904d8b08fd29732 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_36288273220bce339b0e7095192161fb = $(`<div id="html_36288273220bce339b0e7095192161fb" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif;">             <h4 style="margin: 0;">                 <a href="https://frenchlouienyc.com/" target="_blank" style="text-decoration: none; color: #007BFF;">                     <b>French Louie</b>                 </a>             </h4>             <p style="margin-top: 5px; margin-bottom: 5px;">                 French Louie is a modern French-American bistro from the team behind Buttermilk Channel, located at the crossroads of Cobble Hill, Brooklyn Heights, Downtown Brooklyn and Boerum Hill, conveniently close to the Barclays Center and BAM. The hearty but vegetarian-friendly menu includes a selection of three steaks frites as well as a raw bar along with a variety of iced and baked local oysters. The bar offers a list of signature and traditional cocktails along with an extensive selection of French and American wines, regional beers and ciders. French Louie is open for brunch, weekday lunch and dinner.             </p>             <ul>                 <li>                     <a href="https://www.nyctourism.com/restaurant-week/french-louie/" target="_blank" style="text-decoration: none; color: #007BFF;">$ 30 Lunch</li><li>$ 45 Dinner</li><li>$ 45 Sunday Dinner</a>                 </li>             </ul>         </div>         </div>`)[0];
+                popup_93102ea84456152d7904d8b08fd29732.setContent(html_36288273220bce339b0e7095192161fb);
+            
+        
+
+        marker_8cdd92644a0ccace9d01249d3cfcda6b.bindPopup(popup_93102ea84456152d7904d8b08fd29732)
+        ;
+
+        
+    
+    
+            marker_8cdd92644a0ccace9d01249d3cfcda6b.bindTooltip(
+                `<div>
+                     French Louie
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_1e69c31b4f8177f82c614041d2d7cccb = L.marker(
+                [40.754783714285715, -73.97240832653061],
+                {
+}
+            ).addTo(map_1fe24e72c6c26a36cc8997d9532a7447);
+        
+    
+        var popup_94d1ba6d3da6b39695c12438aca38fc4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a5c301c250895f2cea0b007367bf46b9 = $(`<div id="html_a5c301c250895f2cea0b007367bf46b9" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif;">             <h4 style="margin: 0;">                 <a href="https://theseafiregrill.com/" target="_blank" style="text-decoration: none; color: #007BFF;">                     <b>The Sea Fire Grill</b>                 </a>             </h4>             <p style="margin-top: 5px; margin-bottom: 5px;">                 Having perfected the classic steakhouse, the Benjamin Steakhouse Restaurant Group has moved beyond beef to conquer the seafood market. The Sea Fire Grill offers approachable contemporary American seafood, where consistency in execution and highlighting the fish itself is a priority. Open for lunch Monday through Friday, and dinner seven nights a week, the Sea Fire Grill boasts a sleek and energetic bar, elegant dining rooms featuring a roaring fireplace and dark walnut wine racks throughout.             </p>             <ul>                 <li>                     <a href="https://www.nyctourism.com/restaurant-week/sea-fire-grill/" target="_blank" style="text-decoration: none; color: #007BFF;">$ 45 Lunch</li><li>$ 60 Dinner</a>                 </li>             </ul>         </div>         </div>`)[0];
+                popup_94d1ba6d3da6b39695c12438aca38fc4.setContent(html_a5c301c250895f2cea0b007367bf46b9);
+            
+        
+
+        marker_1e69c31b4f8177f82c614041d2d7cccb.bindPopup(popup_94d1ba6d3da6b39695c12438aca38fc4)
+        ;
+
+        
+    
+    
+            marker_1e69c31b4f8177f82c614041d2d7cccb.bindTooltip(
+                `<div>
+                     The Sea Fire Grill
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c52bcdbe1744359c01c14f9b4501220a = L.marker(
+                [40.7904637, -73.973216],
+                {
+}
+            ).addTo(map_1fe24e72c6c26a36cc8997d9532a7447);
+        
+    
+        var popup_d5cb1d9901a1a4ef90592a1f413c47b2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_51beeeb46273467411eb106bb366bc3d = $(`<div id="html_51beeeb46273467411eb106bb366bc3d" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif;">             <h4 style="margin: 0;">                 <a href="https://www.gyu-kaku.com/amsterdam" target="_blank" style="text-decoration: none; color: #007BFF;">                     <b>Gyu-Kaku Japanese BBQ - Amsterdam</b>                 </a>             </h4>             <p style="margin-top: 5px; margin-bottom: 5px;">                 Gyu-Kaku, which means "horn of the bull" in Japanese, specializes in yakiniku—barbecue meat over a charcoal grill. Options include miso-marinated skirt steak and kalbi short rib in a sweet soy marinade. Japanese sake, shochu and cold beers all make good accompaniments.             </p>             <ul>                 <li>                     <a href="https://www.nyctourism.com/restaurant-week/gyu-kaku-japanese-bbq-amsterdam/" target="_blank" style="text-decoration: none; color: #007BFF;">$ 30 Lunch</li><li>$ 45 Dinner</li><li>$ 30 Sunday Lunch / Brunch</li><li>$ 45 Sunday Dinner</a>                 </li>             </ul>         </div>         </div>`)[0];
+                popup_d5cb1d9901a1a4ef90592a1f413c47b2.setContent(html_51beeeb46273467411eb106bb366bc3d);
+            
+        
+
+        marker_c52bcdbe1744359c01c14f9b4501220a.bindPopup(popup_d5cb1d9901a1a4ef90592a1f413c47b2)
+        ;
+
+        
+    
+    
+            marker_c52bcdbe1744359c01c14f9b4501220a.bindTooltip(
+                `<div>
+                     Gyu-Kaku Japanese BBQ - Amsterdam
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_2d6bc9ff5073466a230a38aa8080d5a1 = L.marker(
+                [40.73938413333333, -73.98629853333334],
+                {
+}
+            ).addTo(map_1fe24e72c6c26a36cc8997d9532a7447);
+        
+    
+        var popup_cea27a343e356d8648ea8bba7da054f0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_614a8ab49e203ed2805ed807922171c6 = $(`<div id="html_614a8ab49e203ed2805ed807922171c6" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif;">             <h4 style="margin: 0;">                 <a href="https://www.hawksmoornyc.com/" target="_blank" style="text-decoration: none; color: #007BFF;">                     <b>Hawksmoor</b>                 </a>             </h4>             <p style="margin-top: 5px; margin-bottom: 5px;">                 Hawksmoor was inspired by a labor of love to find the best possible beef and perfect the seemingly simple art of cooking steak. The menu revolves around all-natural beef from family-run farms, many based in upstate New York, Pennsylvania, and New England, simply seasoned with flaked sea salt and seared over live-fire charcoal. Hawksmoor's home, near Gramercy Park in the historic United Charities Building—which was closed from public view for over a century—boasts a 26-foot vaulted ceiling, a 35-seat bar, and two private dining spaces.             </p>             <ul>                 <li>                     <a href="https://www.nyctourism.com/restaurant-week/hawksmoor/" target="_blank" style="text-decoration: none; color: #007BFF;">$ 45 Lunch</a>                 </li>             </ul>         </div>         </div>`)[0];
+                popup_cea27a343e356d8648ea8bba7da054f0.setContent(html_614a8ab49e203ed2805ed807922171c6);
+            
+        
+
+        marker_2d6bc9ff5073466a230a38aa8080d5a1.bindPopup(popup_cea27a343e356d8648ea8bba7da054f0)
+        ;
+
+        
+    
+    
+            marker_2d6bc9ff5073466a230a38aa8080d5a1.bindTooltip(
+                `<div>
+                     Hawksmoor
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_3cc5fbbcbf8fc17051200f7833a21e01 = L.marker(
+                [40.7191802, -74.0099857918641],
+                {
+}
+            ).addTo(map_1fe24e72c6c26a36cc8997d9532a7447);
+        
+    
+        var popup_9fb5d606ac850aea07dad8fde2ae5ede = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a866b19ee245ee49cbe4c96a85a07515 = $(`<div id="html_a866b19ee245ee49cbe4c96a85a07515" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif;">             <h4 style="margin: 0;">                 <a href="https://www.americancutsteakhouse.com/tribeca" target="_blank" style="text-decoration: none; color: #007BFF;">                     <b>American Cut Steakhouse—Tribeca</b>                 </a>             </h4>             <p style="margin-top: 5px; margin-bottom: 5px;">                 American Cut Steakhouse pays homage to the best original and aspirational New York dining experience, the steakhouse. Run by LDV Hospitality, the restaurant offers exceptional food and spirits in a modern setting punctuated by Art Deco accents. Diners will be filled with a sense of culinary intrigue, surrounded by prime cuts and modern interpretations of classic dishes.             </p>             <ul>                 <li>                     <a href="https://www.nyctourism.com/restaurant-week/american-cut-steakhouse-tribeca/" target="_blank" style="text-decoration: none; color: #007BFF;">$ 60 Dinner</a>                 </li>             </ul>         </div>         </div>`)[0];
+                popup_9fb5d606ac850aea07dad8fde2ae5ede.setContent(html_a866b19ee245ee49cbe4c96a85a07515);
+            
+        
+
+        marker_3cc5fbbcbf8fc17051200f7833a21e01.bindPopup(popup_9fb5d606ac850aea07dad8fde2ae5ede)
+        ;
+
+        
+    
+    
+            marker_3cc5fbbcbf8fc17051200f7833a21e01.bindTooltip(
+                `<div>
+                     American Cut Steakhouse—Tribeca
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_2f4555853a87a51f98e0a8864a1c7f31 = L.marker(
+                [40.7113887, -74.00590143019463],
+                {
+}
+            ).addTo(map_1fe24e72c6c26a36cc8997d9532a7447);
+        
+    
+        var popup_5c3593605e2c3c66326cdf23f9f409d9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b2acd6903f0fe905fc3944fdc7ebff21 = $(`<div id="html_b2acd6903f0fe905fc3944fdc7ebff21" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif;">             <h4 style="margin: 0;">                 <a href="https://www.brooklynchophouse.com/brooklyn-chop-house" target="_blank" style="text-decoration: none; color: #007BFF;">                     <b>Brooklyn Chop House - Downtown</b>                 </a>             </h4>             <p style="margin-top: 5px; margin-bottom: 5px;">                 This clubby Financial District spot serves steakhouse classics and Asian dishes in an airy industrial space. Dine on strip steak, rib-eye or filet mignon, and enjoy clever appetizers like deli-sandwich-influenced dumplings (including pastrami and Rueben). There are plenty of other options, too—including chopped house salads, Kung Pao chicken and a slow-roasted seven-pound Peking duck.             </p>             <ul>                 <li>                     <a href="https://www.nyctourism.com/restaurant-week/brooklyn-chop-house/" target="_blank" style="text-decoration: none; color: #007BFF;">$ 60 Dinner</a>                 </li>             </ul>         </div>         </div>`)[0];
+                popup_5c3593605e2c3c66326cdf23f9f409d9.setContent(html_b2acd6903f0fe905fc3944fdc7ebff21);
+            
+        
+
+        marker_2f4555853a87a51f98e0a8864a1c7f31.bindPopup(popup_5c3593605e2c3c66326cdf23f9f409d9)
+        ;
+
+        
+    
+    
+            marker_2f4555853a87a51f98e0a8864a1c7f31.bindTooltip(
+                `<div>
+                     Brooklyn Chop House - Downtown
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_1e810b6bd1ab60b97dab9487900900db = L.marker(
+                [40.7554975, -73.9705521],
+                {
+}
+            ).addTo(map_1fe24e72c6c26a36cc8997d9532a7447);
+        
+    
+        var popup_eaf031b2222f433cdc9737dd5531165a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_185d181980175f7ce7687b182d3159d1 = $(`<div id="html_185d181980175f7ce7687b182d3159d1" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif;">             <h4 style="margin: 0;">                 <a href="https://www.gyu-kaku.com/midtown" target="_blank" style="text-decoration: none; color: #007BFF;">                     <b>Gyu-Kaku Japanese BBQ - Midtown</b>                 </a>             </h4>             <p style="margin-top: 5px; margin-bottom: 5px;">                 Gyu-Kaku, which means "horn of the bull" in Japanese, specializes in yakiniku—barbecue meat over a charcoal grill. Options include miso-marinated skirt steak and kalbi short rib in a sweet soy marinade. Japanese sake, shochu and cold beers all make good accompaniments.             </p>             <ul>                 <li>                     <a href="https://www.nyctourism.com/restaurant-week/gyu-kaku-midtown/" target="_blank" style="text-decoration: none; color: #007BFF;">$ 30 Lunch</li><li>$ 45 Dinner</li><li>$ 30 Sunday Lunch / Brunch</li><li>$ 45 Sunday Dinner</a>                 </li>             </ul>         </div>         </div>`)[0];
+                popup_eaf031b2222f433cdc9737dd5531165a.setContent(html_185d181980175f7ce7687b182d3159d1);
+            
+        
+
+        marker_1e810b6bd1ab60b97dab9487900900db.bindPopup(popup_eaf031b2222f433cdc9737dd5531165a)
+        ;
+
+        
+    
+    
+            marker_1e810b6bd1ab60b97dab9487900900db.bindTooltip(
+                `<div>
+                     Gyu-Kaku Japanese BBQ - Midtown
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a4fa54281c5052088922684acf64abb2 = L.marker(
+                [40.79613195, -73.94614051239257],
+                {
+}
+            ).addTo(map_1fe24e72c6c26a36cc8997d9532a7447);
+        
+    
+        var popup_f845a279ba9591ab58d6b65f079af082 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_38a622215177fc0a5899ce3ccaa4cf32 = $(`<div id="html_38a622215177fc0a5899ce3ccaa4cf32" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif;">             <h4 style="margin: 0;">                 <a href="https://www.contentonyc.com/" target="_blank" style="text-decoration: none; color: #007BFF;">                     <b>Contento</b>                 </a>             </h4>             <p style="margin-top: 5px; margin-bottom: 5px;">                 Contento is the gold standard when it comes to being hospitable to all. Two of its owners—Yannick Benjamin and George Gallego—use wheelchairs, so the layout includes space at the bar that’s at the right height, comfortable tables, clear passageways and thoughtfully designed bathrooms. In 2021, The New York Times named it one of the City’s top 10 new restaurants, lauding its wine list. The interior is elegant, as is an outdoor dining shed festooned with flowers. The Peruvian-inspired menu features octopus with black chimichurri and cauliflower gazpacho and beautifully seared tuna steak with Peruvian corn succotash.             </p>             <ul>                 <li>                     <a href="https://www.nyctourism.com/restaurant-week/contento/" target="_blank" style="text-decoration: none; color: #007BFF;">$ 60 Dinner</a>                 </li>             </ul>         </div>         </div>`)[0];
+                popup_f845a279ba9591ab58d6b65f079af082.setContent(html_38a622215177fc0a5899ce3ccaa4cf32);
+            
+        
+
+        marker_a4fa54281c5052088922684acf64abb2.bindPopup(popup_f845a279ba9591ab58d6b65f079af082)
+        ;
+
+        
+    
+    
+            marker_a4fa54281c5052088922684acf64abb2.bindTooltip(
+                `<div>
+                     Contento
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8e174006a03006ebc7455c7a75e9eb4b = L.marker(
+                [40.754691449999996, -73.98267463742384],
+                {
+}
+            ).addTo(map_1fe24e72c6c26a36cc8997d9532a7447);
+        
+    
+        var popup_62a8bc6a6e1f9400132d8b5641152b5a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9d154b66c2db7a7d1ab36f859b636137 = $(`<div id="html_9d154b66c2db7a7d1ab36f859b636137" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif;">             <h4 style="margin: 0;">                 <a href="https://stksteakhouse.com/venues/nyc-midtown" target="_blank" style="text-decoration: none; color: #007BFF;">                     <b>STK Midtown</b>                 </a>             </h4>             <p style="margin-top: 5px; margin-bottom: 5px;">                 Simply put, STK is not your daddy's steakhouse. The restaurant brings high-energy dining to Manhattan, breaking down the barriers of a normal steakhouse by losing the overly masculine vibe that has long been the trademark of the genre. Maintaining the quality of a traditional steakhouse and simultaneously reinventing the ambiance, clientele and atmosphere, STK introduces the sensibility of a flirty and feminine steakhouse to a young, sexy market. STK offers a bustling bar that builds on the energy of a DJ spinning tracks nightly. The restaurant layout and striking décor create an intimate, one-of-a-kind dining experience.             </p>             <ul>                 <li>                     <a href="https://www.nyctourism.com/restaurant-week/stk-midtown/" target="_blank" style="text-decoration: none; color: #007BFF;">$ 60 Dinner</li><li>$ 30 Sunday Lunch / Brunch</li><li>$ 60 Sunday Dinner</a>                 </li>             </ul>         </div>         </div>`)[0];
+                popup_62a8bc6a6e1f9400132d8b5641152b5a.setContent(html_9d154b66c2db7a7d1ab36f859b636137);
+            
+        
+
+        marker_8e174006a03006ebc7455c7a75e9eb4b.bindPopup(popup_62a8bc6a6e1f9400132d8b5641152b5a)
+        ;
+
+        
+    
+    
+            marker_8e174006a03006ebc7455c7a75e9eb4b.bindTooltip(
+                `<div>
+                     STK Midtown
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_b4ae3c4d3d1acdc2f50a19d5735b7e7f = L.marker(
+                [40.75627265, -73.97117105279128],
+                {
+}
+            ).addTo(map_1fe24e72c6c26a36cc8997d9532a7447);
+        
+    
+        var popup_d115395aac0807e01732d0f0276b1675 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ce412c6da4c9680f35ab830f8b132a53 = $(`<div id="html_ce412c6da4c9680f35ab830f8b132a53" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif;">             <h4 style="margin: 0;">                 <a href="https://www.empiresteakhousenyc.com/midtown-east" target="_blank" style="text-decoration: none; color: #007BFF;">                     <b>Empire Steak House - Midtown East</b>                 </a>             </h4>             <p style="margin-top: 5px; margin-bottom: 5px;">                 Empire Steak House's location on the east side has two raised tiers of seating featuring wrap-around booths and a hand-painted dome. While Empire is acclaimed for steaks such as its famous dry-aged porterhouse for two, the rest of the menu is equally stellar, featuring a wide range of fresh seafood including 4- to 5-lb. lobsters. The 50th street location also offers specialty cuts like the Tomahawk ribeye, bone-in ribeye, Cajun bone-in ribeye, double cut rack of veal and an exclusive Emperors steak for two.             </p>             <ul>                 <li>                     <a href="https://www.nyctourism.com/restaurant-week/empire-steak-house-east-50th-street/" target="_blank" style="text-decoration: none; color: #007BFF;">$ 30 Lunch</li><li>$ 60 Dinner</li><li>$ 60 Sunday Dinner</a>                 </li>             </ul>         </div>         </div>`)[0];
+                popup_d115395aac0807e01732d0f0276b1675.setContent(html_ce412c6da4c9680f35ab830f8b132a53);
+            
+        
+
+        marker_b4ae3c4d3d1acdc2f50a19d5735b7e7f.bindPopup(popup_d115395aac0807e01732d0f0276b1675)
+        ;
+
+        
+    
+    
+            marker_b4ae3c4d3d1acdc2f50a19d5735b7e7f.bindTooltip(
+                `<div>
+                     Empire Steak House - Midtown East
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_6c800a2408ba3cb16d81506a9ffa7a28 = L.marker(
+                [40.7330542, -74.0029005],
+                {
+}
+            ).addTo(map_1fe24e72c6c26a36cc8997d9532a7447);
+        
+    
+        var popup_58168a79824c72ca137bbc3ecb1c3ef4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_71ccb4ae6fd9f741e4268ef91d25d7f3 = $(`<div id="html_71ccb4ae6fd9f741e4268ef91d25d7f3" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif;">             <h4 style="margin: 0;">                 <a href="https://www.boucherieus.com/location/boucherie-west-village" target="_blank" style="text-decoration: none; color: #007BFF;">                     <b>Boucherie West Village</b>                 </a>             </h4>             <p style="margin-top: 5px; margin-bottom: 5px;">                 This traditional French restaurant in the West Village is helmed by corporate executive chef Maxime Kien. His menu includes bistro faves like moules frites in addition to steaks. The bar makes absinthe-based cocktails and a full array of other drinks. Located in the building that once housed the Circle Repertory Theater, the brasserie has multiple dining spaces, including an outdoor space.             </p>             <ul>                 <li>                     <a href="https://www.nyctourism.com/restaurant-week/boucherie-west-village/" target="_blank" style="text-decoration: none; color: #007BFF;">$ 45 Lunch</li><li>$ 60 Dinner</a>                 </li>             </ul>         </div>         </div>`)[0];
+                popup_58168a79824c72ca137bbc3ecb1c3ef4.setContent(html_71ccb4ae6fd9f741e4268ef91d25d7f3);
+            
+        
+
+        marker_6c800a2408ba3cb16d81506a9ffa7a28.bindPopup(popup_58168a79824c72ca137bbc3ecb1c3ef4)
+        ;
+
+        
+    
+    
+            marker_6c800a2408ba3cb16d81506a9ffa7a28.bindTooltip(
+                `<div>
+                     Boucherie West Village
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_30783caa18b9fb7d995b28a1e73bbe6f = L.marker(
+                [40.73978605, -74.00725952808398],
+                {
+}
+            ).addTo(map_1fe24e72c6c26a36cc8997d9532a7447);
+        
+    
+        var popup_0b16bc099628051e3b5d2d46908d82c8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ec70674cbf6ad665938c99ea67888317 = $(`<div id="html_ec70674cbf6ad665938c99ea67888317" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif;">             <h4 style="margin: 0;">                 <a href="https://stksteakhouse.com/venues/nyc-downtown" target="_blank" style="text-decoration: none; color: #007BFF;">                     <b>STK Downtown</b>                 </a>             </h4>             <p style="margin-top: 5px; margin-bottom: 5px;">                 Simply put, STK is not your daddy's steakhouse. The restaurant brings high-energy dining to Manhattan, breaking down the barriers of a normal steakhouse by losing the overly masculine vibe that has long been the trademark of the genre. As a modern and vibrant take on the traditional steakhouse, STK Downtown is a quintessential part of experiencing NYC's nightlife and dining scene. STK offers a bustling bar that builds on the energy of a DJ spinning tracks nightly. The restaurant layout and striking décor create an intimate, one-of-a-kind dining experience.             </p>             <ul>                 <li>                     <a href="https://www.nyctourism.com/restaurant-week/stk-downtown/" target="_blank" style="text-decoration: none; color: #007BFF;">$ 60 Dinner</li><li>$ 30 Sunday Lunch / Brunch</li><li>$ 60 Sunday Dinner</a>                 </li>             </ul>         </div>         </div>`)[0];
+                popup_0b16bc099628051e3b5d2d46908d82c8.setContent(html_ec70674cbf6ad665938c99ea67888317);
+            
+        
+
+        marker_30783caa18b9fb7d995b28a1e73bbe6f.bindPopup(popup_0b16bc099628051e3b5d2d46908d82c8)
+        ;
+
+        
+    
+    
+            marker_30783caa18b9fb7d995b28a1e73bbe6f.bindTooltip(
+                `<div>
+                     STK Downtown
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_2827486a851ea3f1cb9d98509b50cf10 = L.marker(
+                [40.76300295, -73.97667474120954],
+                {
+}
+            ).addTo(map_1fe24e72c6c26a36cc8997d9532a7447);
+        
+    
+        var popup_24cc516769b194a548ab2362c0acc76a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c12f8668afedfa9b79041e4695250d4c = $(`<div id="html_c12f8668afedfa9b79041e4695250d4c" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif;">             <h4 style="margin: 0;">                 <a href="https://midtown.theconsulate.nyc/" target="_blank" style="text-decoration: none; color: #007BFF;">                     <b>The Consulate Midtown</b>                 </a>             </h4>             <p style="margin-top: 5px; margin-bottom: 5px;">                 The Consulate, the Midtown sister location of the Upper West Side restaurant, features a French-American menu. Brunch favorites include blueberry cast iron pancakes, classic eggs Benedict, and croque monsieur and croque madame. Dinner features sumptuous short rib cavatelli, perfectly seared steaks, roasted herb chicken, and locally sourced seafood dishes such as butterflied branzino, tuna tartare with crispy shallots, and perfectly prepared octopus and mussels. Additionally, executive chef Alan Vargas curates a special seasonal menu that centers around a specific region’s recipes and culture, so diners can experience a new country’s cuisine each month.             </p>             <ul>                 <li>                     <a href="https://www.nyctourism.com/restaurant-week/the-consulate-midtown/" target="_blank" style="text-decoration: none; color: #007BFF;">$ 30 Lunch</li><li>$ 60 Dinner</li><li>$ 30 Sunday Lunch / Brunch</li><li>$ 60 Sunday Dinner</a>                 </li>             </ul>         </div>         </div>`)[0];
+                popup_24cc516769b194a548ab2362c0acc76a.setContent(html_c12f8668afedfa9b79041e4695250d4c);
+            
+        
+
+        marker_2827486a851ea3f1cb9d98509b50cf10.bindPopup(popup_24cc516769b194a548ab2362c0acc76a)
+        ;
+
+        
+    
+    
+            marker_2827486a851ea3f1cb9d98509b50cf10.bindTooltip(
+                `<div>
+                     The Consulate Midtown
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_241624b7471026c8127f816fcd4b748e = L.marker(
+                [40.8077952, -73.9292425],
+                {
+}
+            ).addTo(map_1fe24e72c6c26a36cc8997d9532a7447);
+        
+    
+        var popup_f2c414c0d308431314b2235f3d86dff4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d0b10f07a143ebb2cd2ab4e1369e20e0 = $(`<div id="html_d0b10f07a143ebb2cd2ab4e1369e20e0" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif;">             <h4 style="margin: 0;">                 <a href="https://www.charliesbarkitchen.com/" target="_blank" style="text-decoration: none; color: #007BFF;">                     <b>Charlie's Bar & Kitchen</b>                 </a>             </h4>             <p style="margin-top: 5px; margin-bottom: 5px;">                 New American cuisine—like strip steaks, fish and chips, pork chops, and tomato and mozzarella flatbreads—is the name of that game at this relaxed, upscale spot, nestled in the historic Clocktower Building. Round out a meal with a selection from the diverse wine and cocktail menu, featuring signature drinks like Spill the Tea (whiskey, green tea, lemon juice and peach).             </p>             <ul>                 <li>                     <a href="https://www.nyctourism.com/restaurant-week/charlies-bar-kitchen-mott-haven/" target="_blank" style="text-decoration: none; color: #007BFF;">$ 30 Lunch</li><li>$ 45 Dinner</li><li>$ 30 Sunday Lunch / Brunch</li><li>$ 45 Sunday Dinner</a>                 </li>             </ul>         </div>         </div>`)[0];
+                popup_f2c414c0d308431314b2235f3d86dff4.setContent(html_d0b10f07a143ebb2cd2ab4e1369e20e0);
+            
+        
+
+        marker_241624b7471026c8127f816fcd4b748e.bindPopup(popup_f2c414c0d308431314b2235f3d86dff4)
+        ;
+
+        
+    
+    
+            marker_241624b7471026c8127f816fcd4b748e.bindTooltip(
+                `<div>
+                     Charlie's Bar & Kitchen
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_d4644fa3200a2a559c6304f52b547676 = L.marker(
+                [40.7441556, -73.9895824],
+                {
+}
+            ).addTo(map_1fe24e72c6c26a36cc8997d9532a7447);
+        
+    
+        var popup_829ad7630fac184fc06377289bca85d5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cb2f0587c9de4655d09e6c95b51089c5 = $(`<div id="html_cb2f0587c9de4655d09e6c95b51089c5" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif;">             <h4 style="margin: 0;">                 <a href="https://www.ilfioristanyc.com/" target="_blank" style="text-decoration: none; color: #007BFF;">                     <b>Il Fiorista</b>                 </a>             </h4>             <p style="margin-top: 5px; margin-bottom: 5px;">                 Il Florista is a restaurant, bar, café, florist, boutique and community education space that embraces the many uses and benefits of flowers. The Mediterranean-centric menu features flowers throughout. The endive and kohlrabi salad comes with an apple blossom caper vinaigrette. The pappardelle is served with black pepper, lemon, pecorino and lavender. The coriander-glazed lamb steak is accompanied by picked green tomato, preserved shiro plum and rose.             </p>             <ul>                 <li>                     <a href="https://www.nyctourism.com/restaurant-week/il-fiorista/" target="_blank" style="text-decoration: none; color: #007BFF;">$ 60 Dinner</li><li>$ 60 Sunday Dinner</a>                 </li>             </ul>         </div>         </div>`)[0];
+                popup_829ad7630fac184fc06377289bca85d5.setContent(html_cb2f0587c9de4655d09e6c95b51089c5);
+            
+        
+
+        marker_d4644fa3200a2a559c6304f52b547676.bindPopup(popup_829ad7630fac184fc06377289bca85d5)
+        ;
+
+        
+    
+    
+            marker_d4644fa3200a2a559c6304f52b547676.bindTooltip(
+                `<div>
+                     Il Fiorista
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8b043e9a128527451a8166b48491be5f = L.marker(
+                [40.75158515, -73.97913750809082],
+                {
+}
+            ).addTo(map_1fe24e72c6c26a36cc8997d9532a7447);
+        
+    
+        var popup_8b54f85f611aa0744f2e2142d7b8b24a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7fe48d750a8cc958728eef7e70c270d2 = $(`<div id="html_7fe48d750a8cc958728eef7e70c270d2" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif;">             <h4 style="margin: 0;">                 <a href="https://benjaminsteakhouse.com/nyc" target="_blank" style="text-decoration: none; color: #007BFF;">                     <b>Benjamin Steakhouse</b>                 </a>             </h4>             <p style="margin-top: 5px; margin-bottom: 5px;">                 This opulent gem near Grand Central Terminal is the offspring of Peter Luger alumni Benjamin Prelvukaj and chef Arturo McLeod, who bring with them more than 20 years of experience. The succulent steaks at Benjamin Steakhouse are only the beginning: from the beautifully marbled cuts of dry-aged beef to the perfectly refined Old World service and charm, Benjamin's prides itself on providing first-class service in an elegant, bi-level setting complete with brass chandeliers, plush leather banquettes and a roaring fireplace. Benjamin has established itself as one of Manhattan's premier steakhouses, attracting business professionals and celebrities alike.             </p>             <ul>                 <li>                     <a href="https://www.nyctourism.com/restaurant-week/benjamin-steakhouse/" target="_blank" style="text-decoration: none; color: #007BFF;">$ 45 Lunch</li><li>$ 60 Dinner</a>                 </li>             </ul>         </div>         </div>`)[0];
+                popup_8b54f85f611aa0744f2e2142d7b8b24a.setContent(html_7fe48d750a8cc958728eef7e70c270d2);
+            
+        
+
+        marker_8b043e9a128527451a8166b48491be5f.bindPopup(popup_8b54f85f611aa0744f2e2142d7b8b24a)
+        ;
+
+        
+    
+    
+            marker_8b043e9a128527451a8166b48491be5f.bindTooltip(
+                `<div>
+                     Benjamin Steakhouse
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_1a999b3716a294d1845cff435322dfb1 = L.marker(
+                [40.76288495, -73.98406710723577],
+                {
+}
+            ).addTo(map_1fe24e72c6c26a36cc8997d9532a7447);
+        
+    
+        var popup_52e7e95321d1d6bde0932e8cce1a85cc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4a47447e6d5caee4d37bd230e783d59c = $(`<div id="html_4a47447e6d5caee4d37bd230e783d59c" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif;">             <h4 style="margin: 0;">                 <a href="https://victorscafe.com/" target="_blank" style="text-decoration: none; color: #007BFF;">                     <b>Victor's Cafe</b>                 </a>             </h4>             <p style="margin-top: 5px; margin-bottom: 5px;">                 Victor’s, in the Theatre District, has been a redoubt for high-end Cuban food for 50 years. In an airy space, the tropical theme is carried out with bright hand-painted murals, cane-backed chairs and old-time paddle fans gently waving in the rafters. The menu is more ambitious than a rice-and-beans joint, with both a classica menu of favorites like ropa vieja, skirt steak sautéed in onions, tomatoes, onions and peppers, then shredded by hand; and a nueva menu with ambitious fare like snapper, marinated in Seville oranges, and salmon, with a sugarcane glaze.             </p>             <ul>                 <li>                     <a href="https://www.nyctourism.com/restaurant-week/victors-cafe/" target="_blank" style="text-decoration: none; color: #007BFF;">$ 30 Lunch</li><li>$ 45 Dinner</li><li>$ 30 Sunday Lunch / Brunch</li><li>$ 45 Sunday Dinner</a>                 </li>             </ul>         </div>         </div>`)[0];
+                popup_52e7e95321d1d6bde0932e8cce1a85cc.setContent(html_4a47447e6d5caee4d37bd230e783d59c);
+            
+        
+
+        marker_1a999b3716a294d1845cff435322dfb1.bindPopup(popup_52e7e95321d1d6bde0932e8cce1a85cc)
+        ;
+
+        
+    
+    
+            marker_1a999b3716a294d1845cff435322dfb1.bindTooltip(
+                `<div>
+                     Victor's Cafe
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_b5c05ec893b34dc358a41c4fa0f6ad5f = L.marker(
+                [40.764509, -73.98301001135479],
+                {
+}
+            ).addTo(map_1fe24e72c6c26a36cc8997d9532a7447);
+        
+    
+        var popup_88cf85b067f92b867617dcbc1d7f1cdd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7b2ad9d9ac8cb5c530fa7d699f5a2a04 = $(`<div id="html_7b2ad9d9ac8cb5c530fa7d699f5a2a04" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif;">             <h4 style="margin: 0;">                 <a href="https://www.empiresteakhousenyc.com/midtown-west" target="_blank" style="text-decoration: none; color: #007BFF;">                     <b>Empire Steak House - Midtown West</b>                 </a>             </h4>             <p style="margin-top: 5px; margin-bottom: 5px;">                 Empire Steak House on 54th Street showcases modern decor in a classy but trendy atmosphere. The all-white, 50-foot marble bar and sprawling dining room provide an air of sophistication. Empire is acclaimed for its dry-aged porterhouse for two, and the rest of the vast menu features a wide range of fresh seafood including 4- to 5-pound lobsters, Chilean sea bass, salmon, yellow fin tuna and towering seafood platters. The eatery offers a highly selective wine list with many sought-after California vintages.             </p>             <ul>                 <li>                     <a href="https://www.nyctourism.com/restaurant-week/empire-steak-house-west-54th-street/" target="_blank" style="text-decoration: none; color: #007BFF;">$ 30 Lunch</li><li>$ 60 Dinner</li><li>$ 60 Sunday Dinner</a>                 </li>             </ul>         </div>         </div>`)[0];
+                popup_88cf85b067f92b867617dcbc1d7f1cdd.setContent(html_7b2ad9d9ac8cb5c530fa7d699f5a2a04);
+            
+        
+
+        marker_b5c05ec893b34dc358a41c4fa0f6ad5f.bindPopup(popup_88cf85b067f92b867617dcbc1d7f1cdd)
+        ;
+
+        
+    
+    
+            marker_b5c05ec893b34dc358a41c4fa0f6ad5f.bindTooltip(
+                `<div>
+                     Empire Steak House - Midtown West
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_9a036535dd6e80dbcca158d0844042e3 = L.marker(
+                [40.7343055, -73.9934609],
+                {
+}
+            ).addTo(map_1fe24e72c6c26a36cc8997d9532a7447);
+        
+    
+        var popup_c17852b32af6ced892e06bb9a2d73749 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_aad6424f1bf90d90c18f88659fbb893b = $(`<div id="html_aad6424f1bf90d90c18f88659fbb893b" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif;">             <h4 style="margin: 0;">                 <a href="https://www.striphouse.com/location/striphouse-downtown" target="_blank" style="text-decoration: none; color: #007BFF;">                     <b>Strip House Downtown</b>                 </a>             </h4>             <p style="margin-top: 5px; margin-bottom: 5px;">                 Strip House Downtown delivers on dishes and décor, creating a steakhouse unlike any other in New York. The menu by executive chef John Schenk features prime cuts of beef charred to perfection, signature side dishes such as truffle creamed spinach and goose fat potatoes, and the famed 24-layer chocolate cake. The wine list is comprehensive and interesting. Part of the experience is the sumptuous, all-red decor, mood lighting and vintage black-and-white photographs. These rare images of captivating females from the original 1900s Studio Manasse collection reference an era of decadence and seduction. Reservations are suggested.             </p>             <ul>                 <li>                     <a href="https://www.nyctourism.com/restaurant-week/strip-house-downtown/" target="_blank" style="text-decoration: none; color: #007BFF;">$ 60 Dinner</li><li>$ 60 Sunday Dinner</a>                 </li>             </ul>         </div>         </div>`)[0];
+                popup_c17852b32af6ced892e06bb9a2d73749.setContent(html_aad6424f1bf90d90c18f88659fbb893b);
+            
+        
+
+        marker_9a036535dd6e80dbcca158d0844042e3.bindPopup(popup_c17852b32af6ced892e06bb9a2d73749)
+        ;
+
+        
+    
+    
+            marker_9a036535dd6e80dbcca158d0844042e3.bindTooltip(
+                `<div>
+                     Strip House Downtown
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_fee74291e613faa5231b191e8512af1e = L.marker(
+                [40.72806720299258, -73.99090027219897],
+                {
+}
+            ).addTo(map_1fe24e72c6c26a36cc8997d9532a7447);
+        
+    
+        var popup_683b51fe028cfb87e84b82eb183d8b8a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_520b241a387c1c296980967710ba0a11 = $(`<div id="html_520b241a387c1c296980967710ba0a11" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif;">             <h4 style="margin: 0;">                 <a href="https://www.gyu-kaku.com/east-village" target="_blank" style="text-decoration: none; color: #007BFF;">                     <b>Gyu-Kaku Japanese BBQ - East Village</b>                 </a>             </h4>             <p style="margin-top: 5px; margin-bottom: 5px;">                 Gyu-Kaku, which means "horn of the bull" in Japanese, specializes in yakiniku—barbecue meat over a charcoal grill. Options include miso-marinated skirt steak and kalbi short rib in a sweet soy marinade. Japanese sake, shochu and cold beers all make good accompaniments.             </p>             <ul>                 <li>                     <a href="https://www.nyctourism.com/restaurant-week/gyu-kaku-japanese-bbq-east-village/" target="_blank" style="text-decoration: none; color: #007BFF;">$ 30 Lunch</li><li>$ 45 Dinner</li><li>$ 30 Sunday Lunch / Brunch</li><li>$ 45 Sunday Dinner</a>                 </li>             </ul>         </div>         </div>`)[0];
+                popup_683b51fe028cfb87e84b82eb183d8b8a.setContent(html_520b241a387c1c296980967710ba0a11);
+            
+        
+
+        marker_fee74291e613faa5231b191e8512af1e.bindPopup(popup_683b51fe028cfb87e84b82eb183d8b8a)
+        ;
+
+        
+    
+    
+            marker_fee74291e613faa5231b191e8512af1e.bindTooltip(
+                `<div>
+                     Gyu-Kaku Japanese BBQ - East Village
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_fba46e41078c5eb94380786bba78c574 = L.marker(
+                [40.7614427, -74.0003975],
+                {
+}
+            ).addTo(map_1fe24e72c6c26a36cc8997d9532a7447);
+        
+    
+        var popup_bcd6e4da8c17408f536a706d01f343aa = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d939ce20e556c6fea5161d7dc6a3f7a5 = $(`<div id="html_d939ce20e556c6fea5161d7dc6a3f7a5" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif;">             <h4 style="margin: 0;">                 <a href="https://www.kingsofkobe.com/" target="_blank" style="text-decoration: none; color: #007BFF;">                     <b>Kings of Kobe</b>                 </a>             </h4>             <p style="margin-top: 5px; margin-bottom: 5px;">                 Kings of Kobe continuously keeps customers on their toes with unique takes on American classics. The towering American Wagyu burger creations and mouth-melting American Wagyu steaks—and the frenzy of sides—speak to the Kings of Kobe core: unadulterated, delicious fun. With utmost attention to quality and harmony of taste, Kings of Kobe ensures a one-of-a-kind experience first and foremost through its food—each dish notable for its mosaic of toppings and succulent base made of domestically-sourced Wagyu. And secondly, through its inviting space. The interioris brimming with colorful accents, designed exclusively by graffiti artist and New York legend, Hektad. All are welcome, whether it's to relish a quick post-work drink or share a long, nourishing meal amongst friends. Kings of Kobe aims to reinvigorate the area’s sense of conviviality, serving as a go-to hangout for both locals and tourists.             </p>             <ul>                 <li>                     <a href="https://www.nyctourism.com/restaurant-week/kings-of-kobe/" target="_blank" style="text-decoration: none; color: #007BFF;">$ 45 Lunch</li><li>$ 60 Dinner</a>                 </li>             </ul>         </div>         </div>`)[0];
+                popup_bcd6e4da8c17408f536a706d01f343aa.setContent(html_d939ce20e556c6fea5161d7dc6a3f7a5);
+            
+        
+
+        marker_fba46e41078c5eb94380786bba78c574.bindPopup(popup_bcd6e4da8c17408f536a706d01f343aa)
+        ;
+
+        
+    
+    
+            marker_fba46e41078c5eb94380786bba78c574.bindTooltip(
+                `<div>
+                     Kings of Kobe
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_4227ce2bbb52a987cf0e1a5893c76d59 = L.marker(
+                [40.6253497, -73.9277599],
+                {
+}
+            ).addTo(map_1fe24e72c6c26a36cc8997d9532a7447);
+        
+    
+        var popup_db3a2453ed99cccc2471097ea766c924 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_24ce4fe08ce4a3f5e7449d4b1555f1bc = $(`<div id="html_24ce4fe08ce4a3f5e7449d4b1555f1bc" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif;">             <h4 style="margin: 0;">                 <a href="https://www.lechainyc.com/" target="_blank" style="text-decoration: none; color: #007BFF;">                     <b>Lé Chai</b>                 </a>             </h4>             <p style="margin-top: 5px; margin-bottom: 5px;">                 Lé Chai, located in Flatlands, Brooklyn, and founded by restaurateur David L. Thomas, redefines the classic steakhouse experience with a Thai fusion twist. Their menu pairs premium steak cuts with bold, authentic Thai flavors and Asian-inspired flair, creating a unique culinary journey. From the savory appetizers to the signature fusion steaks, each dish offers a taste of where East meets West in an inviting, vibrant atmosphere.             </p>             <ul>                 <li>                     <a href="https://www.nyctourism.com/restaurant-week/le-chai/" target="_blank" style="text-decoration: none; color: #007BFF;">$ 45 Dinner</li><li>$ 60 Sunday Lunch / Brunch</a>                 </li>             </ul>         </div>         </div>`)[0];
+                popup_db3a2453ed99cccc2471097ea766c924.setContent(html_24ce4fe08ce4a3f5e7449d4b1555f1bc);
+            
+        
+
+        marker_4227ce2bbb52a987cf0e1a5893c76d59.bindPopup(popup_db3a2453ed99cccc2471097ea766c924)
+        ;
+
+        
+    
+    
+            marker_4227ce2bbb52a987cf0e1a5893c76d59.bindTooltip(
+                `<div>
+                     Lé Chai
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c5e84d0b48d7542ba1411adb4efd43c8 = L.marker(
+                [40.61670225, -74.03125412548076],
+                {
+}
+            ).addTo(map_1fe24e72c6c26a36cc8997d9532a7447);
+        
+    
+        var popup_37c7311377600fe90680a4494895fd63 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4ad2cc2d88f99971edc03f58de8ae6a0 = $(`<div id="html_4ad2cc2d88f99971edc03f58de8ae6a0" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif;">             <h4 style="margin: 0;">                 <a href="https://www.hunterssteakhouse.com/" target="_blank" style="text-decoration: none; color: #007BFF;">                     <b>Hunter's Steak & Ale House</b>                 </a>             </h4>             <p style="margin-top: 5px; margin-bottom: 5px;">                 Hunter's Steak and Ale House has been a staple in Bay Ridge for more than 30 years. Enjoy traditional dishes like homemade crab cakes, chicken wings, lobster tails and a variety of steaks and hearty fare. The high-quality steaks are dry aged to perfection on site, and the dedicated staff prides themselves on their friendly, professional demeanor. An Irish brogue is often overheard at the long oak bar where neighbors gather for a low-key pint.             </p>             <ul>                 <li>                     <a href="https://www.nyctourism.com/restaurant-week/hunters-steak-ale-house/" target="_blank" style="text-decoration: none; color: #007BFF;">$ 30 Lunch</li><li>$ 45 Dinner</li><li>$ 30 Sunday Lunch / Brunch</li><li>$ 45 Sunday Dinner</a>                 </li>             </ul>         </div>         </div>`)[0];
+                popup_37c7311377600fe90680a4494895fd63.setContent(html_4ad2cc2d88f99971edc03f58de8ae6a0);
+            
+        
+
+        marker_c5e84d0b48d7542ba1411adb4efd43c8.bindPopup(popup_37c7311377600fe90680a4494895fd63)
+        ;
+
+        
+    
+    
+            marker_c5e84d0b48d7542ba1411adb4efd43c8.bindTooltip(
+                `<div>
+                     Hunter's Steak & Ale House
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_efdc9e0f1958792910a3a511ce1d60f1 = L.marker(
+                [40.7618852, -73.9854132],
+                {
+}
+            ).addTo(map_1fe24e72c6c26a36cc8997d9532a7447);
+        
+    
+        var popup_ba045e128cbc7d53b055e4a32e89b62b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d6b352d672dc6c94189ce2aa3cfc121b = $(`<div id="html_d6b352d672dc6c94189ce2aa3cfc121b" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif;">             <h4 style="margin: 0;">                 <a href="https://www.thepalm.com/location/the-palm-midtown/" target="_blank" style="text-decoration: none; color: #007BFF;">                     <b>The Palm - Midtown</b>                 </a>             </h4>             <p style="margin-top: 5px; margin-bottom: 5px;">                 The second in a chain of Palm restaurants, this one is located in the Theatre District. This has steadily become a staple in the highly trafficked Times Square area. Be sure to keep an eye out for Broadway's finest actors catching a Prime Aged New York Strip steak and a bottle of Barberesco after the evening's final performance.             </p>             <ul>                 <li>                     <a href="https://www.nyctourism.com/restaurant-week/palm-midtown/" target="_blank" style="text-decoration: none; color: #007BFF;">$ 45 Lunch</li><li>$ 60 Dinner</li><li>$ 45 Sunday Lunch / Brunch</li><li>$ 60 Sunday Dinner</a>                 </li>             </ul>         </div>         </div>`)[0];
+                popup_ba045e128cbc7d53b055e4a32e89b62b.setContent(html_d6b352d672dc6c94189ce2aa3cfc121b);
+            
+        
+
+        marker_efdc9e0f1958792910a3a511ce1d60f1.bindPopup(popup_ba045e128cbc7d53b055e4a32e89b62b)
+        ;
+
+        
+    
+    
+            marker_efdc9e0f1958792910a3a511ce1d60f1.bindTooltip(
+                `<div>
+                     The Palm - Midtown
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_2e3571068e0f0d89fab8d83e084534a8 = L.marker(
+                [40.77786948053251, -73.95383505334952],
+                {
+}
+            ).addTo(map_1fe24e72c6c26a36cc8997d9532a7447);
+        
+    
+        var popup_0d7fe0706943c73182aca348ff300742 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b690170fe2068856f323e88f9359a011 = $(`<div id="html_b690170fe2068856f323e88f9359a011" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif;">             <h4 style="margin: 0;">                 <a href="https://www.jacquesbrasserie.com/" target="_blank" style="text-decoration: none; color: #007BFF;">                     <b>Jacques Brasserie</b>                 </a>             </h4>             <p style="margin-top: 5px; margin-bottom: 5px;">                 Jacques Brasserie is a romantic bistro that feels like one of those off-the-tourist-track places that you always hope to find in Paris. There's cozy atmosphere, great food and ambiance. Jacques Brasserie is known for its Nantucket fresh oysters and delicious steak au poivre.             </p>             <ul>                 <li>                     <a href="https://www.nyctourism.com/restaurant-week/jacques-brasserie/" target="_blank" style="text-decoration: none; color: #007BFF;">$ 45 Lunch</li><li>$ 60 Dinner</li><li>$ 45 Sunday Lunch / Brunch</li><li>$ 60 Sunday Dinner</a>                 </li>             </ul>         </div>         </div>`)[0];
+                popup_0d7fe0706943c73182aca348ff300742.setContent(html_b690170fe2068856f323e88f9359a011);
+            
+        
+
+        marker_2e3571068e0f0d89fab8d83e084534a8.bindPopup(popup_0d7fe0706943c73182aca348ff300742)
+        ;
+
+        
+    
+    
+            marker_2e3571068e0f0d89fab8d83e084534a8.bindTooltip(
+                `<div>
+                     Jacques Brasserie
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_1b984658fd26d710cb4d9fe785d4dca1 = L.marker(
+                [40.763003285714284, -73.97592887755103],
+                {
+}
+            ).addTo(map_1fe24e72c6c26a36cc8997d9532a7447);
+        
+    
+        var popup_ed445904e73e7697489991ac33a039d6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fd8b4c6ce3902f6ca565cf69c9e6ef3c = $(`<div id="html_fd8b4c6ce3902f6ca565cf69c9e6ef3c" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif;">             <h4 style="margin: 0;">                 <a href="https://www.benihana.com/locations/newyorkwest-ny-we" target="_blank" style="text-decoration: none; color: #007BFF;">                     <b>Benihana</b>                 </a>             </h4>             <p style="margin-top: 5px; margin-bottom: 5px;">                 Benihana is a dining experience unlike any other: guests are seated at communal tables in groups, where a personal chef will perform the ancient art of teppanyaki. Watch as they slice and dice, preparing a meal of mouth-watering steak, tender chicken or succulent seafood that will dazzle the eyes as well as the taste buds. Also enjoy sushi prepared by a talented sushi chef, and indulge in a specialty cocktail. The restaurant includes a full bar with sushi lounge, great for after-work drinks and meeting friends. Celebrate a special occasion in the elegant private dining rooms.             </p>             <ul>                 <li>                     <a href="https://www.nyctourism.com/restaurant-week/benihana/" target="_blank" style="text-decoration: none; color: #007BFF;">$ 45 Dinner</li><li>$ 45 Sunday Dinner</a>                 </li>             </ul>         </div>         </div>`)[0];
+                popup_ed445904e73e7697489991ac33a039d6.setContent(html_fd8b4c6ce3902f6ca565cf69c9e6ef3c);
+            
+        
+
+        marker_1b984658fd26d710cb4d9fe785d4dca1.bindPopup(popup_ed445904e73e7697489991ac33a039d6)
+        ;
+
+        
+    
+    
+            marker_1b984658fd26d710cb4d9fe785d4dca1.bindTooltip(
+                `<div>
+                     Benihana
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_683dd6a2c802667f954c24527f9ef984 = L.marker(
+                [40.76115905, -73.98056857386796],
+                {
+}
+            ).addTo(map_1fe24e72c6c26a36cc8997d9532a7447);
+        
+    
+        var popup_874cc8394552053f5fcf861423a3debd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_59f4a7f0434e09c29c330eefbfc7c4f0 = $(`<div id="html_59f4a7f0434e09c29c330eefbfc7c4f0" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif;">             <h4 style="margin: 0;">                 <a href="https://www.mastrosrestaurants.com/location/mastros-steakhouse-new-york" target="_blank" style="text-decoration: none; color: #007BFF;">                     <b>Mastro's Steakhouse NYC</b>                 </a>             </h4>             <p style="margin-top: 5px; margin-bottom: 5px;">                 Mastro’s collection of sophisticated steakhouses and Ocean Clubs has brought its masterful combination of world-class service, highly acclaimed cuisine and refinement to New York City. The menu features 16 different steaks and chops—ranging from an eight-ounce petite filet to a 48-ounce double cut porterhouse—and an array of fresh seafood selections. Enjoy live entertainment at the bar seven nights a week while sipping on hand-crafted cocktails and eclectic wines.             </p>             <ul>                 <li>                     <a href="https://www.nyctourism.com/restaurant-week/mastros-steakhouse-nyc/" target="_blank" style="text-decoration: none; color: #007BFF;">$ 60 Dinner</a>                 </li>             </ul>         </div>         </div>`)[0];
+                popup_874cc8394552053f5fcf861423a3debd.setContent(html_59f4a7f0434e09c29c330eefbfc7c4f0);
+            
+        
+
+        marker_683dd6a2c802667f954c24527f9ef984.bindPopup(popup_874cc8394552053f5fcf861423a3debd)
+        ;
+
+        
+    
+    
+            marker_683dd6a2c802667f954c24527f9ef984.bindTooltip(
+                `<div>
+                     Mastro's Steakhouse NYC
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_174d0417c240f5b290a0cd80f3857ae1 = L.marker(
+                [40.67047385, -73.9849385794574],
+                {
+}
+            ).addTo(map_1fe24e72c6c26a36cc8997d9532a7447);
+        
+    
+        var popup_f58fe6bfe56370369425ebf6dacb3910 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c776a6b6cb064830f061d12010051c2c = $(`<div id="html_c776a6b6cb064830f061d12010051c2c" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif;">             <h4 style="margin: 0;">                 <a href="https://flatironrestaurant.com/" target="_blank" style="text-decoration: none; color: #007BFF;">                     <b>Flatiron Steakhouse</b>                 </a>             </h4>             <p style="margin-top: 5px; margin-bottom: 5px;">                 Flatiron Steakhouse is a restaurant in Park Slope, Brooklyn, with an old-school neighborhood vibe. They serve American Wagyu Gold Grade beef, plus Prime rib-eye and beef dishes, seared salmon, and grilled avocado with wild rice. Flatiron Steakhouse is located near Barclays Center. It's a casual setting with a full bar and 20 beers on tap.             </p>             <ul>                 <li>                     <a href="https://www.nyctourism.com/restaurant-week/flatiron-steakhouse/" target="_blank" style="text-decoration: none; color: #007BFF;">$ 45 Dinner</li><li>$ 45 Sunday Dinner</a>                 </li>             </ul>         </div>         </div>`)[0];
+                popup_f58fe6bfe56370369425ebf6dacb3910.setContent(html_c776a6b6cb064830f061d12010051c2c);
+            
+        
+
+        marker_174d0417c240f5b290a0cd80f3857ae1.bindPopup(popup_f58fe6bfe56370369425ebf6dacb3910)
+        ;
+
+        
+    
+    
+            marker_174d0417c240f5b290a0cd80f3857ae1.bindTooltip(
+                `<div>
+                     Flatiron Steakhouse
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c20aab17bf1f3edd047c2879140ed3b8 = L.marker(
+                [40.76095375, -73.99032808489807],
+                {
+}
+            ).addTo(map_1fe24e72c6c26a36cc8997d9532a7447);
+        
+    
+        var popup_877eb0a6643914081601efe314fe7915 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a2fc2d042b20abeda40ee69916c66620 = $(`<div id="html_a2fc2d042b20abeda40ee69916c66620" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif;">             <h4 style="margin: 0;">                 <a href="https://palermonyc.com/" target="_blank" style="text-decoration: none; color: #007BFF;">                     <b>Palermo Argentinian Bistro</b>                 </a>             </h4>             <p style="margin-top: 5px; margin-bottom: 5px;">                 Meat lovers will love Palermo Argentinian Bistro, where beef reigns supreme. Orhan Cakir, the force behind the Pierre Loti wine bar in Gramercy, has teamed up with executive chef Carlos Barroz, formerly of La Pulperia, to open this latest addition to Manhattan’s Restaurant Row. The steakhhouse draws it inspiration from Palermo, a destination in Buenos Aires known for its fashionable bars and restaurants. Set in a three-story brownstone built in 1894, the bi-level restaurant brings traditional Argentinian barbecue centering on prime steaks sourced from the nearby century-old Piccinini Brothers butcher shop.             </p>             <ul>                 <li>                     <a href="https://www.nyctourism.com/restaurant-week/palermo-argentinian-bistro/" target="_blank" style="text-decoration: none; color: #007BFF;">$ 60 Dinner</li><li>$ 60 Sunday Dinner</a>                 </li>             </ul>         </div>         </div>`)[0];
+                popup_877eb0a6643914081601efe314fe7915.setContent(html_a2fc2d042b20abeda40ee69916c66620);
+            
+        
+
+        marker_c20aab17bf1f3edd047c2879140ed3b8.bindPopup(popup_877eb0a6643914081601efe314fe7915)
+        ;
+
+        
+    
+    
+            marker_c20aab17bf1f3edd047c2879140ed3b8.bindTooltip(
+                `<div>
+                     Palermo Argentinian Bistro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ef5b852cd39bb2613544dcdd91e01c4e = L.marker(
+                [40.612499150000005, -74.06472424066072],
+                {
+}
+            ).addTo(map_1fe24e72c6c26a36cc8997d9532a7447);
+        
+    
+        var popup_4295faaaa05dcb57b55ffff26c902b4f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d3daef793f80e8cb58a3202f2fa93b68 = $(`<div id="html_d3daef793f80e8cb58a3202f2fa93b68" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif;">             <h4 style="margin: 0;">                 <a href="https://www.doncheechnyc.com/" target="_blank" style="text-decoration: none; color: #007BFF;">                     <b>Don Cheech</b>                 </a>             </h4>             <p style="margin-top: 5px; margin-bottom: 5px;">                 Don Cheech is an Italian-American restaurant created by executive chef Massimo Felici, inspired by his old neighborhood, the old-school Little Italy (Mulberry Street in Manhattan), where exceptionally well-prepared food was served in an elegant comfortable setting. Traditional dishes like Stuffed Long Hots, Seafood Salad, Linguine Vongola, Chicken Parmigiana, Scarpariello, and Steak Diane are elevated to a new level. Tablecloth settings, burgundy booths, chandeliers and mirrors, a large bar, and a glass wine room gives Don Cheech that old-school elegant atmosphere.             </p>             <ul>                 <li>                     <a href="https://www.nyctourism.com/restaurant-week/don-cheech/" target="_blank" style="text-decoration: none; color: #007BFF;">$ 30 Lunch</li><li>$ 60 Dinner</li><li>$ 30 Sunday Lunch / Brunch</li><li>$ 60 Sunday Dinner</a>                 </li>             </ul>         </div>         </div>`)[0];
+                popup_4295faaaa05dcb57b55ffff26c902b4f.setContent(html_d3daef793f80e8cb58a3202f2fa93b68);
+            
+        
+
+        marker_ef5b852cd39bb2613544dcdd91e01c4e.bindPopup(popup_4295faaaa05dcb57b55ffff26c902b4f)
+        ;
+
+        
+    
+    
+            marker_ef5b852cd39bb2613544dcdd91e01c4e.bindTooltip(
+                `<div>
+                     Don Cheech
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_622639365d805e276dd36cf40b7ca3ed = L.marker(
+                [40.732491, -74.0038579],
+                {
+}
+            ).addTo(map_1fe24e72c6c26a36cc8997d9532a7447);
+        
+    
+        var popup_e2833aa8131a06ca4478f3bb565943c0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_61e49bb711d116f5b2bf65c412e2048b = $(`<div id="html_61e49bb711d116f5b2bf65c412e2048b" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif;">             <h4 style="margin: 0;">                 <a href="https://www.accolade-ny.com/" target="_blank" style="text-decoration: none; color: #007BFF;">                     <b>L'Accolade</b>                 </a>             </h4>             <p style="margin-top: 5px; margin-bottom: 5px;">                 L’Accolade belongs to the budding scene of natural wine bars and restaurants that offer outstanding food to match their vintages. The West Village bistro is bathed in rosé and chardonnay tones, its bar thatched with wooden rods resembling a dripping pipe organ. The daily happy hour (3–7pm) features discounted glasses from small producers to pair with boquerones and gougères with molten centers of aged cheddar and jalapeño. The full dinner menu is seasonal; typical offerings include fluke crudo and soy-glazed flatiron steak.             </p>             <ul>                 <li>                     <a href="https://www.nyctourism.com/restaurant-week/laccolade/" target="_blank" style="text-decoration: none; color: #007BFF;">$ 60 Dinner</li><li>$ 30 Sunday Lunch / Brunch</li><li>$ 60 Sunday Dinner</a>                 </li>             </ul>         </div>         </div>`)[0];
+                popup_e2833aa8131a06ca4478f3bb565943c0.setContent(html_61e49bb711d116f5b2bf65c412e2048b);
+            
+        
+
+        marker_622639365d805e276dd36cf40b7ca3ed.bindPopup(popup_e2833aa8131a06ca4478f3bb565943c0)
+        ;
+
+        
+    
+    
+            marker_622639365d805e276dd36cf40b7ca3ed.bindTooltip(
+                `<div>
+                     L'Accolade
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_44194b634f7da4e00f5abdd60563a269 = L.marker(
+                [40.7858452, -73.9723966],
+                {
+}
+            ).addTo(map_1fe24e72c6c26a36cc8997d9532a7447);
+        
+    
+        var popup_263b46b450d3aae2bd99dc320d48720a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c3545626c6b61472de6e2f670ec1a098 = $(`<div id="html_c3545626c6b61472de6e2f670ec1a098" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif;">             <h4 style="margin: 0;">                 <a href="https://uws.theconsulate.nyc/" target="_blank" style="text-decoration: none; color: #007BFF;">                     <b>The Consulate UWS</b>                 </a>             </h4>             <p style="margin-top: 5px; margin-bottom: 5px;">                 The Consulate, located on the Upper West Side, is a light and airy space that features a French-American menu. Brunch favorites include blueberry cast iron pancakes, classic eggs Benedict, and beet and gin cured salmon. Dinner features sumptuous short rib cavatelli, perfectly seared steaks, roasted herb chicken, and locally sourced seafood dishes such as seared branzino, scallop tartare with crispy shallots, and perfectly prepared octopus and mussels. Additionally, executive chef Alan Vargas curates a special seasonal menu that centers around a specific region’s recipes and culture, so diners can experience a new country’s cuisine each month.             </p>             <ul>                 <li>                     <a href="https://www.nyctourism.com/restaurant-week/the-consulate/" target="_blank" style="text-decoration: none; color: #007BFF;">$ 30 Lunch</li><li>$ 60 Dinner</li><li>$ 60 Sunday Dinner</a>                 </li>             </ul>         </div>         </div>`)[0];
+                popup_263b46b450d3aae2bd99dc320d48720a.setContent(html_c3545626c6b61472de6e2f670ec1a098);
+            
+        
+
+        marker_44194b634f7da4e00f5abdd60563a269.bindPopup(popup_263b46b450d3aae2bd99dc320d48720a)
+        ;
+
+        
+    
+    
+            marker_44194b634f7da4e00f5abdd60563a269.bindTooltip(
+                `<div>
+                     The Consulate UWS
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_604c446cbfc375ec5665cfaa9081cda8 = L.marker(
+                [40.76019865, -73.98637566363554],
+                {
+}
+            ).addTo(map_1fe24e72c6c26a36cc8997d9532a7447);
+        
+    
+        var popup_c191e3e96ca29e2b4d162337b2fd461b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_43df654b6b1beb842580b3ada80bd9e0 = $(`<div id="html_43df654b6b1beb842580b3ada80bd9e0" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif;">             <h4 style="margin: 0;">                 <a href="https://www.brooklynchophouse.com/times-square" target="_blank" style="text-decoration: none; color: #007BFF;">                     <b>Brooklyn Chop House - Times Square</b>                 </a>             </h4>             <p style="margin-top: 5px; margin-bottom: 5px;">                 This clubby spot serves steakhouse classics and Asian dishes in Times Square. Dine on strip steak, rib-eye or filet mignon, and enjoy clever appetizers like deli-sandwich-influenced dumplings (including pastrami, Rueben, and lamb gyro). There are plenty of other options, too—including chopped house salads, Kung Pao chicken and a slow-roasted seven-pound Peking duck.             </p>             <ul>                 <li>                     <a href="https://www.nyctourism.com/restaurant-week/brooklyn-chop-house-times-square/" target="_blank" style="text-decoration: none; color: #007BFF;">$ 60 Dinner</a>                 </li>             </ul>         </div>         </div>`)[0];
+                popup_c191e3e96ca29e2b4d162337b2fd461b.setContent(html_43df654b6b1beb842580b3ada80bd9e0);
+            
+        
+
+        marker_604c446cbfc375ec5665cfaa9081cda8.bindPopup(popup_c191e3e96ca29e2b4d162337b2fd461b)
+        ;
+
+        
+    
+    
+            marker_604c446cbfc375ec5665cfaa9081cda8.bindTooltip(
+                `<div>
+                     Brooklyn Chop House - Times Square
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_60538f30ac51f5cb20c19b20196b3a93 = L.marker(
+                [40.7219036, -73.9580608],
+                {
+}
+            ).addTo(map_1fe24e72c6c26a36cc8997d9532a7447);
+        
+    
+        var popup_06d4436cdad5845022593ac3c157086b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e79a28817f2a19f68afdbdda2aa287f1 = $(`<div id="html_e79a28817f2a19f68afdbdda2aa287f1" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif;">             <h4 style="margin: 0;">                 <a href="https://www.lecrocodile.com/" target="_blank" style="text-decoration: none; color: #007BFF;">                     <b>Le Crocodile</b>                 </a>             </h4>             <p style="margin-top: 5px; margin-bottom: 5px;">                 This soaring, beautifully lit brasserie inside Williamsburg’s Wythe Hotel has crisp, thin, golden frites worth taking the L train for. They accompany excellent steak au poivre and roasted chicken with herb jus, two of the standouts on the French menu. It was developed by Jake Leiber and Aidan O’Neal, the chefs behind Greenpoint’s popular Chez Ma Tante. The third member of the team is noted restaurateur Jon Neidich (Acme, The Happiest Hour). The dozen desserts are also sublime, including profiteroles, classic crème brûlée and chocolate pot de crème.             </p>             <ul>                 <li>                     <a href="https://www.nyctourism.com/restaurant-week/le-crocodile/" target="_blank" style="text-decoration: none; color: #007BFF;">$ 45 Lunch</a>                 </li>             </ul>         </div>         </div>`)[0];
+                popup_06d4436cdad5845022593ac3c157086b.setContent(html_e79a28817f2a19f68afdbdda2aa287f1);
+            
+        
+
+        marker_60538f30ac51f5cb20c19b20196b3a93.bindPopup(popup_06d4436cdad5845022593ac3c157086b)
+        ;
+
+        
+    
+    
+            marker_60538f30ac51f5cb20c19b20196b3a93.bindTooltip(
+                `<div>
+                     Le Crocodile
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_95b643bc5607110b5680d64895eb960d = L.marker(
+                [40.7536948125, -73.9745323125],
+                {
+}
+            ).addTo(map_1fe24e72c6c26a36cc8997d9532a7447);
+        
+    
+        var popup_927dae6cd4dcda4668db6d15de9de24b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6c8140b77e7d37c45827666e340c6001 = $(`<div id="html_6c8140b77e7d37c45827666e340c6001" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif;">             <h4 style="margin: 0;">                 <a href="https://www.doscaminos.com/location/dos-caminos-lexington" target="_blank" style="text-decoration: none; color: #007BFF;">                     <b>Dos Caminos Lexington</b>                 </a>             </h4>             <p style="margin-top: 5px; margin-bottom: 5px;">                 Margaritas and Mexican cuisine meet serious south-of-the-border style at this boisterous, popular mega-eatery. With more than 100 types of tequila, Dos Caminos easily attracts the after-work crowd for creative libations like the chile-infused Cosmos del Diablo and addictive appetizers such as fresh guacamole prepared table-side and plantain-stuffed empanadas. But its inventive renditions of traditional Latin cooking, including Black Angus skirt steak and coconut-strawberry tres leches cake, should lure folks to linger past cocktail hour.             </p>             <ul>                 <li>                     <a href="https://www.nyctourism.com/restaurant-week/dos-caminos-lexington/" target="_blank" style="text-decoration: none; color: #007BFF;">$ 30 Lunch</li><li>$ 45 Dinner</a>                 </li>             </ul>         </div>         </div>`)[0];
+                popup_927dae6cd4dcda4668db6d15de9de24b.setContent(html_6c8140b77e7d37c45827666e340c6001);
+            
+        
+
+        marker_95b643bc5607110b5680d64895eb960d.bindPopup(popup_927dae6cd4dcda4668db6d15de9de24b)
+        ;
+
+        
+    
+    
+            marker_95b643bc5607110b5680d64895eb960d.bindTooltip(
+                `<div>
+                     Dos Caminos Lexington
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_77210f44e61db7bae6685015b2a8b8e7 = L.marker(
+                [40.71400065, -74.01587980162219],
+                {
+}
+            ).addTo(map_1fe24e72c6c26a36cc8997d9532a7447);
+        
+    
+        var popup_d7e9e02a182bf2e921f04b900fed6857 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0870df875355b0ad53b1e9189151edaa = $(`<div id="html_0870df875355b0ad53b1e9189151edaa" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif;">             <h4 style="margin: 0;">                 <a href="https://delfriscosgrille.com/brookfield-place" target="_blank" style="text-decoration: none; color: #007BFF;">                     <b>Del Frisco's Grille - Brookfield Place</b>                 </a>             </h4>             <p style="margin-top: 5px; margin-bottom: 5px;">                 Located in Lower Manhattan’s Brookfield Place, Del Frisco’s features a steakhouse-style menu, with classic starters like a wedge salad and choice cuts of broiled steaks—though you’ll also find variety with ahi tacos, wild mushroom flatbreads, truffled mac and cheese and a cauliflower steak. Meat and seafood meal kits are available, desserts are prepared in house and the wine list is unsurprisingly long.             </p>             <ul>                 <li>                     <a href="https://www.nyctourism.com/restaurant-week/del-friscos-grille-brookfield-place/" target="_blank" style="text-decoration: none; color: #007BFF;">$ 60 Lunch</li><li>$ 60 Dinner</li><li>$ 60 Sunday Lunch / Brunch</li><li>$ 60 Sunday Dinner</a>                 </li>             </ul>         </div>         </div>`)[0];
+                popup_d7e9e02a182bf2e921f04b900fed6857.setContent(html_0870df875355b0ad53b1e9189151edaa);
+            
+        
+
+        marker_77210f44e61db7bae6685015b2a8b8e7.bindPopup(popup_d7e9e02a182bf2e921f04b900fed6857)
+        ;
+
+        
+    
+    
+            marker_77210f44e61db7bae6685015b2a8b8e7.bindTooltip(
+                `<div>
+                     Del Frisco's Grille - Brookfield Place
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
